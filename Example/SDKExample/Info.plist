@@ -6,6 +6,13 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>3amlabs.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 			<key>logmeinrescue.com</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>

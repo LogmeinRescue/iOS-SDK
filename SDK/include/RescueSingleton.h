@@ -5,6 +5,9 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 /**
  Root class for Rescue SDK singleton classes
  */

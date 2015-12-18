@@ -5,6 +5,9 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 /**
  The <b>RescueScreenShareDelegate</b> protocol defines a set of optional methods you can use to get notified about screen sharing related events.
@@ -24,12 +27,12 @@
 - (UIView *)rescueScreenShareRequestViewToSendToTechnician;
 
 /**
- @brief      Tells the delegatethat the screen sharing has been started.
+ @brief      Tells the delegate that the screen sharing has been started.
  */
 - (void)rescueScreenShareDidStart;
 
 /**
- @brief      Tells the delegatethat the screen sharing has been ended.
+ @brief      Tells the delegate that the screen sharing has been ended.
  */
 - (void)rescueScreenShareDidStop;
 

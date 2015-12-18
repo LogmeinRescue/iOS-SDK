@@ -5,15 +5,28 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+#import "RescueSingleton.h"
 #import "RescueSessionStatus.h"
 #import "RescueSessionStartParameters.h"
 #import "RescueSessionDelegate.h"
 #import "RescueLoggerDelegate.h"
 
+
 /**
  The connection between your application and the Rescue Technician Console is represented by a <b>RescueSession</b> object. This is a singleton object you access it by calling the <b>sharedInstance</b> class method.
  */
 @interface RescueSession : RescueSingleton
+
+/** @name Identification */
+
+/**
+ @brief      Unique identifier for the app.
+ 
+ @discussion Every app need an API key, without it starting a Rescue session will always fail.
+ */
+@property (nonatomic, strong) NSString *apiKey;
 
 /** @name Delegate */
 

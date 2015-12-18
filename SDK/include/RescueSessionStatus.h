@@ -5,6 +5,9 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 /**
  Session status during lifecycle
  */
@@ -46,18 +49,45 @@ typedef NS_ENUM(NSUInteger, RescueAppState)
  */
 typedef NS_ENUM(NSUInteger, RescueError)
 {
-    /// you tried to start the session in pin code mode, but there were no valid pin code
-    RescueErrorLoginNoPincode = 1,
-    /// your pin code has been expired
-    RescueErrorLoginPincodeExpired,
+    /// missing pin code
+    RescueErrorNoPincode = 1,
+    /// the pin code has been expired
+    RescueErrorPincodeExpired,
     /// there are no technicians on the channel
-    RescueErrorLoginNoTechnicianAvailable,
+    RescueErrorNoTechnicianAvailable,
     /// the technicians on the channel are not configured for mobile support
-    RescueErrorLoginNoTechnicianLicense,
+    RescueErrorNoTechnicianLicense,
     /// there were no answer from the Rescue Service
-    RescueErrorLoginNoReply,
+    RescueErrorNoReply,
     /// unknown reply from the Rescue Service
-    RescueErrorLoginUnknownReply,
+    RescueErrorUnknownReply,
     /// there were no answer from the Rescue Service in the given time
-    RescueErrorLoginTimeout,
+    RescueErrorTimeout,
+    
+    /// no API key was set for the session
+    RescueErrorApiKeyMissing,
+    /// the Rescue SDK could not access or send the bundle identifier
+    RescueErrorAppIdMissing ,
+    /// the given API key does not exist in the Rescue Service
+    RescueErrorApiKeyDoesNotExist,
+    /// the given API key is disabled in the Rescue Service
+    RescueErrorApiKeyDisabled ,
+    /// the given API key is not valid with the app's bundle identifier
+    RescueErrorApiKeyAndAppIdNotFromTheSameCompany,
+    /// the given pin code was not belong to the company with the given API key
+    RescueErrorPrivateCodeApiKeyNotFromTheSameCompany,
+    /// the given channel does not beong to the company with the given API key
+    RescueErrorChannelApiKeyNotFromTheSameCompany,
+    /// the given channel does not exists
+    RescueErrorChannelDoesNotExist,
+    /// the given company does not exists
+    RescueErrorCompanyDoesNotExist,
+    /// the Rescue service could not parse the request
+    RescueErrorRequest,
+    /// a required parameter is missing (e.g. channel id in a channel session)
+    RescueErrorRequiredParameterMissing,
+    /// the pin code is invalid
+    RescueErrorInvalidPincode,
+    /// the pin code was not generated for this type of session
+    RescueErrorInvalidPincodeForSessionType,
 };

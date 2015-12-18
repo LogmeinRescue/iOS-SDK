@@ -89,19 +89,45 @@
                         <h4 class="method-subtitle">Definition</h4>
                         <code>typedef NS_ENUM(NSUInteger, RescueError ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginNoPincode</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorNoPincode</a> = 1,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginPincodeExpired</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorPincodeExpired</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginNoTechnicianAvailable</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorNoTechnicianAvailable</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginNoTechnicianLicense</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorNoTechnicianLicense</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginNoReply</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorNoReply</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginUnknownReply</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorUnknownReply</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RescueErrorLoginTimeout</a>,<br>
+                            &nbsp;&nbsp; <a href="">RescueErrorTimeout</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorApiKeyMissing</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorAppIdMissing</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorApiKeyDoesNotExist</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorApiKeyDisabled</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorApiKeyAndAppIdNotFromTheSameCompany</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorPrivateCodeApiKeyNotFromTheSameCompany</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorChannelApiKeyNotFromTheSameCompany</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorChannelDoesNotExist</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorCompanyDoesNotExist</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorRequest</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorRequiredParameterMissing</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorInvalidPincode</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">RescueErrorInvalidPincodeForSessionType</a>,<br>
                             
                             };</code>
                     
@@ -111,11 +137,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="RescueErrorLoginNoPincode"></a><code>RescueErrorLoginNoPincode</code></dt>
+                            <dt><a name="" title="RescueErrorNoPincode"></a><code>RescueErrorNoPincode</code></dt>
 <dd>
 
 
-<p>you tried to start the session in pin code mode, but there were no valid pin code</p>
+<p>missing pin code</p>
 
 
 
@@ -128,11 +154,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginPincodeExpired"></a><code>RescueErrorLoginPincodeExpired</code></dt>
+                            <dt><a name="" title="RescueErrorPincodeExpired"></a><code>RescueErrorPincodeExpired</code></dt>
 <dd>
 
 
-<p>your pin code has been expired</p>
+<p>the pin code has been expired</p>
 
 
 
@@ -145,7 +171,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginNoTechnicianAvailable"></a><code>RescueErrorLoginNoTechnicianAvailable</code></dt>
+                            <dt><a name="" title="RescueErrorNoTechnicianAvailable"></a><code>RescueErrorNoTechnicianAvailable</code></dt>
 <dd>
 
 
@@ -162,7 +188,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginNoTechnicianLicense"></a><code>RescueErrorLoginNoTechnicianLicense</code></dt>
+                            <dt><a name="" title="RescueErrorNoTechnicianLicense"></a><code>RescueErrorNoTechnicianLicense</code></dt>
 <dd>
 
 
@@ -179,7 +205,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginNoReply"></a><code>RescueErrorLoginNoReply</code></dt>
+                            <dt><a name="" title="RescueErrorNoReply"></a><code>RescueErrorNoReply</code></dt>
 <dd>
 
 
@@ -196,7 +222,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginUnknownReply"></a><code>RescueErrorLoginUnknownReply</code></dt>
+                            <dt><a name="" title="RescueErrorUnknownReply"></a><code>RescueErrorUnknownReply</code></dt>
 <dd>
 
 
@@ -213,11 +239,232 @@
 	
 </dd>
                             
-                            <dt><a name="" title="RescueErrorLoginTimeout"></a><code>RescueErrorLoginTimeout</code></dt>
+                            <dt><a name="" title="RescueErrorTimeout"></a><code>RescueErrorTimeout</code></dt>
 <dd>
 
 
 <p>there were no answer from the Rescue Service in the given time</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorApiKeyMissing"></a><code>RescueErrorApiKeyMissing</code></dt>
+<dd>
+
+
+<p>no API key was set for the session</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorAppIdMissing"></a><code>RescueErrorAppIdMissing</code></dt>
+<dd>
+
+
+<p>the Rescue SDK could not access or send the bundle identifier</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorApiKeyDoesNotExist"></a><code>RescueErrorApiKeyDoesNotExist</code></dt>
+<dd>
+
+
+<p>the given API key does not exist in the Rescue Service</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorApiKeyDisabled"></a><code>RescueErrorApiKeyDisabled</code></dt>
+<dd>
+
+
+<p>the given API key is disabled in the Rescue Service</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorApiKeyAndAppIdNotFromTheSameCompany"></a><code>RescueErrorApiKeyAndAppIdNotFromTheSameCompany</code></dt>
+<dd>
+
+
+<p>the given API key is not valid with the app&rsquo;s bundle identifier</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorPrivateCodeApiKeyNotFromTheSameCompany"></a><code>RescueErrorPrivateCodeApiKeyNotFromTheSameCompany</code></dt>
+<dd>
+
+
+<p>the given pin code was not belong to the company with the given API key</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorChannelApiKeyNotFromTheSameCompany"></a><code>RescueErrorChannelApiKeyNotFromTheSameCompany</code></dt>
+<dd>
+
+
+<p>the given channel does not beong to the company with the given API key</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorChannelDoesNotExist"></a><code>RescueErrorChannelDoesNotExist</code></dt>
+<dd>
+
+
+<p>the given channel does not exists</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorCompanyDoesNotExist"></a><code>RescueErrorCompanyDoesNotExist</code></dt>
+<dd>
+
+
+<p>the given company does not exists</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorRequest"></a><code>RescueErrorRequest</code></dt>
+<dd>
+
+
+<p>the Rescue service could not parse the request</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorRequiredParameterMissing"></a><code>RescueErrorRequiredParameterMissing</code></dt>
+<dd>
+
+
+<p>a required parameter is missing (e.g. channel id in a channel session)</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorInvalidPincode"></a><code>RescueErrorInvalidPincode</code></dt>
+<dd>
+
+
+<p>the pin code is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">RescueSessionStatus.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="RescueErrorInvalidPincodeForSessionType"></a><code>RescueErrorInvalidPincodeForSessionType</code></dt>
+<dd>
+
+
+<p>the pin code was not generated for this type of session</p>
 
 
 
@@ -252,7 +499,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 LogMeIn Inc. All rights reserved. Updated: 2015-10-15</p>
+						<p class="copyright">Copyright &copy; 2015 LogMeIn Inc. All rights reserved. Updated: 2015-12-15</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
