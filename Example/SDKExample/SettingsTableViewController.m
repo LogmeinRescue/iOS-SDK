@@ -2,8 +2,7 @@
 //  SettingsViewController.m
 //  SDKExample
 //
-//  Created by tkristofcsik on 12/10/15.
-//  Copyright © 2015 LogMeIn. All rights reserved.
+//  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
 #import "SettingsTableViewController.h"
@@ -53,8 +52,19 @@
     [[NSUserDefaults standardUserDefaults] setInteger:sender.selectedSegmentIndex forKey:kScreenShareModeDefaultsKey];
 }
 
+
+#pragma mark - UITextFieldDelegate
+
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kChannelIdDefaultsKey];
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
 @end

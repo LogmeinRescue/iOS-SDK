@@ -6,13 +6,13 @@
 //
 
 #import "ViewController.h"
-#import "RescueSDK.h"
 
-// insert your channel ID here
+#warning TODO: Set your own channel id
+// your channel ID
 static NSString* const kChannelId = nil;
 
 
-@interface ViewController () <RescueSessionDelegate, RescueLoggerDelegate, RescueChatDelegate, UITextFieldDelegate, UIAlertViewDelegate>
+@interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextView* textView;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
@@ -38,6 +38,11 @@ static NSString* const kChannelId = nil;
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateStyle = NSDateFormatterNoStyle;
     self.dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    
+
+    #warning TODO: Set your own API key
+    // set API key
+    [RescueSession sharedInstance].apiKey = @"";
     
     // set delegate objects of RescueSession
     [RescueSession sharedInstance].delegate = self;

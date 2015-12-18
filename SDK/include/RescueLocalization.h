@@ -5,13 +5,15 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #import "RescueSessionStatus.h"
 
 
 /**
  Localizable string identifiers
  */
-typedef NS_ENUM(NSInteger, RescueLocalizationStringIdentifier)
+typedef NS_ENUM(NSUInteger, RescueLocalizationStringIdentifier)
 {
     /// string for 'connecting' session state
     RescueLocalizationStringIdentifierStatusConnecting,

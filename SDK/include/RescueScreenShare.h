@@ -5,13 +5,16 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "RescueScreenShareDelegate.h"
 
 
 /**
  Screen sharing modes.
  */
-typedef NS_ENUM(NSInteger, RescueScreenShareMode)
+typedef NS_ENUM(NSUInteger, RescueScreenShareMode)
 {
     /// Share the whole app screen.
     RescueScreenShareModeAppScreen,

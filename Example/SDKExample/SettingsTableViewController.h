@@ -2,8 +2,7 @@
 //  SettingsViewController.h
 //  SDKExample
 //
-//  Created by tkristofcsik on 12/10/15.
-//  Copyright © 2015 LogMeIn. All rights reserved.
+//  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

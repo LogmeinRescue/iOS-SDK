@@ -5,6 +5,9 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+
 /**
  The <b>RescueSessionStartParameters</b> class is used by the <b>RescueSession</b> class to configure the session start parameters. Do not create your own instance of this class, <b>RescueSession</b> will hold its own, use that one.
  */
@@ -36,7 +39,7 @@
 - (BOOL)continueSession;
 
 /**
- @brief      Returns a boolena indicating weather the instance holds a valid configuration to start a session.
+ @brief      Returns a boolean indicating weather the instance holds a valid configuration to start a session.
 
  @return     <i>YES</i> if configuration is valid to start a session, otherwise <i>NO</i>
 

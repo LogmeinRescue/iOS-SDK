@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RescueSDK.h"
 
 static NSString* const kDisableLaserPointerDefaultsKey = @"RSSDKDisableLaserPointerDefaultsKey";
 static NSString* const kDisableWhiteboardDefaultsKey = @"RSSDKDisableWhiteBoardDefaultsKey";
@@ -13,7 +14,8 @@ static NSString* const kHideChatFieldDefaultsKey = @"RSSDKHideChatFieldDefaultsK
 static NSString* const kScreenShareModeDefaultsKey = @"RSSDKScreenShareModeDefaultsKey";
 static NSString* const kChannelIdDefaultsKey = @"RSSDKChannelIdDefaultsKey";
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <RescueSessionDelegate, RescueLoggerDelegate, RescueChatDelegate, UITextFieldDelegate, UIAlertViewDelegate>
+
 
 @end
 

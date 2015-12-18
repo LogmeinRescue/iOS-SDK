@@ -5,7 +5,11 @@
 //  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+#import "RescueSingleton.h"
 #import "RescueChatDelegate.h"
+
 
 /**
  The <b>RescueChat</b> class provides methods and properties to manage chat functionality in the Rescue SDK.
