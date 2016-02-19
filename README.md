@@ -16,7 +16,7 @@ You can use Rescue SDK via [CocoaPods](http://cocoapods.org). Add the following 
 source 'https://github.com/LogmeinRescue/CocoaPodsSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod RescueSDK ~> 1.0
+pod 'RescueSDK', '~> 1.0'
 ```
 
 **Important:** don't forget to add both pod sources to top of your `Podfile`!
