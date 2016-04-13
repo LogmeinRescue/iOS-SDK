@@ -113,16 +113,6 @@
 @property (nonatomic, readonly) RescueSessionStatus sessionStatus;
 
 /**
- @brief      State of the app.
-
- @discussion This property is KVO compliant.
-
- @sa         RescueAppState
- */
-@property (nonatomic, readonly) RescueAppState appState;
-
-
-/**
  @brief      Name of the technician.
 
  @discussion This property is KVO compliant
@@ -141,6 +131,7 @@
  @brief      Transmitted data during session
  */
 @property (nonatomic, readonly) size_t transmittedData;
+
 
 /**
  @brief      URL of the customer survey.

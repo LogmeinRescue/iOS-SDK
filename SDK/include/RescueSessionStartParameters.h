@@ -17,6 +17,13 @@
 /** @name Start modes */
 
 /**
+ @brief      Configure the session start parameters to create a session with the given pin code.
+ 
+ @param      pinCode Pin code for the session.
+ */
+- (void)startWithPinCode:(NSString *)pinCode;
+
+/**
  @brief      Configure the session start parameters to create a session with the given company id and channel name.
 
  @param      companyId   Company identifier in the Rescue System.
