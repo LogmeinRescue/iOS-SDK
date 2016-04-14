@@ -34,17 +34,6 @@ typedef NS_ENUM(NSUInteger, RescueSessionStatus)
 };
 
 /**
- State of the App
- */
-typedef NS_ENUM(NSUInteger, RescueAppState)
-{
-    /// app is running in the background
-    RescueAppStateBackground = 1,
-    /// app is running in the foreground
-    RescueAppStateForeground
-};
-
-/**
  Error codes
  */
 typedef NS_ENUM(NSUInteger, RescueError)
