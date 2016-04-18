@@ -13,13 +13,12 @@ You can use Rescue SDK via [CocoaPods](http://cocoapods.org). Add the following 
 #### Podfile
 
 ```ruby
-source 'https://github.com/LogmeinRescue/CocoaPodsSpecs.git'
-source 'https://github.com/CocoaPods/Specs.git'
-
 pod 'RescueSDK', '~> 1.0'
 ```
 
-**Important:** don't forget to add both pod sources to top of your `Podfile`!
+~~**Important:** don't forget to add both pod sources to top of your `Podfile`!~~
+
+**UPDATE:** our pod has been moved to the official CocoaPods pod source. Please remove the LogmeinRescue `source` from your `Podfile`.
 
 ### Manually
 
