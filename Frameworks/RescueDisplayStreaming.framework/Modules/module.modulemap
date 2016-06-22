@@ -1,0 +1,10 @@
+framework module RescueDisplayStreaming {
+  umbrella header "RescueDisplayStreaming.h"
+
+  export *
+  module * { export * }
+}
+
+module RescueDisplayStreaming.Swift {
+    header "RescueDisplayStreaming-Swift.h"
+}
