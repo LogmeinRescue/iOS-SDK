@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+</head>
+<body>
+
+<div class="headerFile">
+<div class="headerName">RescueChatMessage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> RescueChatMessage</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>NSCoding</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RescueChatMessage.message</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, strong) NSString *message</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong) NSString *message</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RescueChatMessage.type</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) RescueChatMessageType type</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic) RescueChatMessageType type</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RescueChatMessage.date</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, strong) NSDate *date</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong) NSDate *date</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RescueScreenShare.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShareMode</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShareModeAppScreen</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShareModeRootView</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShareModeDisabled</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.delegate</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.mode</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.rootView</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.hiddenViews</div>
+<div class="difference"><span class="status removed">Removed</span> -[RescueScreenShare setView:hidden:]</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.disableLaserPointer</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.disableWhiteboard</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RescueScreenShare+WebView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare (WebView)</div>
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShare.webViewsWithPasswordFields</div>
+<div class="difference"><span class="status removed">Removed</span> -[RescueScreenShare setWebViewWithPasswordFields:hidden:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RescueScreenShareDelegate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> RescueScreenShareDelegate</div>
+<div class="difference"><span class="status removed">Removed</span> -[RescueScreenShareDelegate rescueScreenShareRequestViewToSendToTechnician]</div>
+<div class="difference"><span class="status removed">Removed</span> -[RescueScreenShareDelegate rescueScreenShareDidStart]</div>
+<div class="difference"><span class="status removed">Removed</span> -[RescueScreenShareDelegate rescueScreenShareDidStop]</div>
+</div>
+
+</div>
+</body>
+</html>

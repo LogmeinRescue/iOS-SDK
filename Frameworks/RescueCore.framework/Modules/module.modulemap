@@ -1,0 +1,10 @@
+framework module RescueCore {
+  umbrella header "RescueCore.h"
+
+  export *
+  module * { export * }
+}
+
+module RescueCore.Swift {
+    header "RescueCore-Swift.h"
+}
