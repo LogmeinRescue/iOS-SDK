@@ -12,10 +12,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/LogmeinRescue/iOS-SDK.git", :tag => s.version.to_s }
   s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES" }
 
-  s.default_subspec = 'Core'
+  s.default_subspec = "Core"
 
   s.subspec 'Core' do |core|
-    core.name = "RescueCore"
     core.vendored_frameworks = "Frameworks/RescueCore.framework"
+  end
+
+  s.subspec 'DisplayStreaming' do |display_streaming|
+    display_streaming.vendored_frameworks = "Frameworks/RescueDisplayStreaming.framework"
+    display_streaming.dependency "RescueSDK/Core"
   end
 end
