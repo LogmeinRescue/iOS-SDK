@@ -22,4 +22,9 @@ Pod::Spec.new do |s|
     display_streaming.vendored_frameworks = "Frameworks/RescueDisplayStreaming.framework"
     display_streaming.dependency "RescueSDK/Core"
   end
+
+  s.subspec 'CameraStreaming' do |camera_streaming|
+    camera_streaming.vendored_frameworks = "Frameworks/RescueCameraStreaming.framework"
+    camera_streaming.dependency "RescueSDK/Core"
+  end
 end
