@@ -8,12 +8,19 @@ For further information please visit our website: http://secure.logmeinrescue.co
 
 ### By CocoaPods
 
-You can use Rescue SDK via [CocoaPods](http://cocoapods.org). Add the following lines to your `Podfile`:
+You can use Rescue SDK via [CocoaPods](http://cocoapods.org). Add each modules you'd like to use to your `Podfile`:
 
 #### Podfile
 
 ```ruby
-pod 'RescueSDK', '~> 1.0'
+target 'YourAppTarget' do
+  use_frameworks!
+
+  pod 'RescueSDK/Core'
+  pod 'RescueSDK/DisplayStreaming'
+  pod 'RescueSDK/CameraStreaming'
+end
+
 ```
 
 ~~**Important:** don't forget to add both pod sources to top of your `Podfile`!~~
@@ -22,4 +29,4 @@ pod 'RescueSDK', '~> 1.0'
 
 ### Manually
 
-Follow the guide on our [website](http://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html).
+Download the [latest release](https://github.com/LogmeinRescue/iOS-SDK/releases/latest) and follow the [guide](http://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html) on our website.
