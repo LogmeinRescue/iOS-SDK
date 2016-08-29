@@ -4,46 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<data>
-		4fOcjvqqal83EVUJB1f9erjyI1g=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		uBhJIb6O47CuNxR0sOFbWxcWhlY=
-		</data>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<data>
-		9GRKiHOJ4jdjBW6PJyMYT85vcYo=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		qbONuzdMiO/pjjMWQllpBqoMM3k=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		qMWsivLkoUCMNFOaCbj7+N/QlRM=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		+wOUdydhsGXFxUODFm5S5D3MiWg=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		1JuiZjToyyfYjv/vDcR6erBkpTQ=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		qTZq0gQeLjfdhfNLioixcK2i9/A=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		Y+GA8y2gFoYiBBEt1eC24XyGZIY=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		RmmBGGvKaL/3+Qdz5MZUoZT7rWg=
-		</data>
 		<key>Headers/RescueCamera.h</key>
 		<data>
 		11yNCOwCQFw4nfnQT3lCbkZYp5I=
@@ -66,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HkkpVgk7A9BEPkFkhSPC20bzJsE=
+		nPU+jTpmanUltSTNoxppDAcd1m4=
 		</data>
 		<key>Modules/RescueCameraStreaming.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -74,7 +34,7 @@
 		</data>
 		<key>Modules/RescueCameraStreaming.swiftmodule/arm.swiftmodule</key>
 		<data>
-		LHXI45uZaW+/ekZOnH7dLTLes3o=
+		SURsrqgiir2a1+QlXrHzoilCXHE=
 		</data>
 		<key>Modules/RescueCameraStreaming.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,7 +42,7 @@
 		</data>
 		<key>Modules/RescueCameraStreaming.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		2m6nZOwQ7bZ2S2VDZ8k8HlNRUfA=
+		CeQWLc4H8ojsqxLsyjMfoCE/9Ko=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,116 +51,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4fOcjvqqal83EVUJB1f9erjyI1g=
-			</data>
-			<key>hash2</key>
-			<data>
-			8yGsZnw5wUrPIjv8m1MQ2Z5XQ024dJw7TOEzsswMSDg=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uBhJIb6O47CuNxR0sOFbWxcWhlY=
-			</data>
-			<key>hash2</key>
-			<data>
-			hFZjeo0ih1HX2rxwSevzWPLbtfh9Gt6SEQcwc1dCyrw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9GRKiHOJ4jdjBW6PJyMYT85vcYo=
-			</data>
-			<key>hash2</key>
-			<data>
-			Zb5GPfPN9wJCjlTyaIlFR6uoG0W4Ui2ivK/iTtBsG9A=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qbONuzdMiO/pjjMWQllpBqoMM3k=
-			</data>
-			<key>hash2</key>
-			<data>
-			mXlbkcQHypOQjjru1QUR2LmM0AW99lqYsOlBtE8b2cY=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qMWsivLkoUCMNFOaCbj7+N/QlRM=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hgm1zedveCrxvG4WJrv+GECzPKrtTHbGzPgu76863VM=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+wOUdydhsGXFxUODFm5S5D3MiWg=
-			</data>
-			<key>hash2</key>
-			<data>
-			O0KR9k3rsD4Wy6Mk6QUn6+6bSDra2PAv0v8Jfk1KqxI=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1JuiZjToyyfYjv/vDcR6erBkpTQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			wNSzqBdgRQL8mFD/tPppltjj+kAzozEOOcAAVMXJ5s4=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qTZq0gQeLjfdhfNLioixcK2i9/A=
-			</data>
-			<key>hash2</key>
-			<data>
-			Z7PRbVKeQ+FYaiszZudeda6xtKufrC4zZqCxqFJSQHk=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y+GA8y2gFoYiBBEt1eC24XyGZIY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Qn5bJxSJashhTjbAL0cHRWvE6u9NeV9wfij1mOd/uUk=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RmmBGGvKaL/3+Qdz5MZUoZT7rWg=
-			</data>
-			<key>hash2</key>
-			<data>
-			OD+97mRwEG8iGpMGep/N/lhHhQ33FzkpxE4n7bP8JoE=
-			</data>
-		</dict>
 		<key>Headers/RescueCamera.h</key>
 		<dict>
 			<key>hash</key>
@@ -271,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LHXI45uZaW+/ekZOnH7dLTLes3o=
+			SURsrqgiir2a1+QlXrHzoilCXHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			I7HbTCKMy17Ib8GKPj/GG3UkFoM7VZq50NIjbqo41wQ=
+			LjBU4SrIS9dSx47hqAH6Xr7fnN6eSaDr9gWpUr4Z5yM=
 			</data>
 		</dict>
 		<key>Modules/RescueCameraStreaming.swiftmodule/arm64.swiftdoc</key>
@@ -293,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2m6nZOwQ7bZ2S2VDZ8k8HlNRUfA=
+			CeQWLc4H8ojsqxLsyjMfoCE/9Ko=
 			</data>
 			<key>hash2</key>
 			<data>
-			z7Oa5zFfMXJCNsoyNHMkoRLG3WLOwIPQieV8Ids208A=
+			wGX1cRqkk7yJ4Hg9SqTrX9oF57aQ8KQiYUvh3+Du3Ko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

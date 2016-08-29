@@ -4,46 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<data>
-		iZW3S8zf4y3WfyP8MCXs9PAKrMc=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		7fqCZYmRdevb33fub+zz506jONA=
-		</data>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<data>
-		RegCIc0ow+vROqbfk7z8JKAlszM=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		pECSA73ODHRNcaaRZPEDXvAvdaY=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		NdjIRKY0Yo+KUHKFrXVYh4V30X4=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		1CVWudGGpQo4Sx659gF4kfwrjxs=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		rX2MFbG/gJ+8LHIAFgjVl7y/U+4=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		1xQOlsWoZkdu0L36WmMmuvaUaD8=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		pInenQQ6R8ly1DkSpgy5dO4kfzs=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		n9rXH11IcEPW9NSNTHXHAjyXaV0=
-		</data>
 		<key>Headers/RescueChat.h</key>
 		<data>
 		Fq1VszOrXYG0VkxBVjSZXllnrRI=
@@ -102,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ICBaLdEaqSf5PnM94hdOGKQSEnM=
+		SAWHBDpHF64v2kszolk+K/uBgmo=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -110,7 +70,7 @@
 		</data>
 		<key>Modules/RescueCore.swiftmodule/arm.swiftmodule</key>
 		<data>
-		DHKcMbhxU5fYb4IfcserN1wvANA=
+		QfjezwmOQI5W4PsD1QRJ1K3n4vE=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -118,7 +78,7 @@
 		</data>
 		<key>Modules/RescueCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		RdjLFAaEWZxxb/+L+lAEf7pNRiU=
+		JC6XBgjuBOlx6C8ymx8S0cjRqqc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -340,6 +300,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>strip-frameworks.sh</key>
+		<data>
+		l9vZtyD/fGhqCGrIdssJkhXJE0E=
+		</data>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -388,116 +352,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iZW3S8zf4y3WfyP8MCXs9PAKrMc=
-			</data>
-			<key>hash2</key>
-			<data>
-			84jcebTCfkoHFSdj2BQPoQjUe4utmq+7PGbkxpNQ19w=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7fqCZYmRdevb33fub+zz506jONA=
-			</data>
-			<key>hash2</key>
-			<data>
-			sCpH6EL0CQ7KGp/rTeK55JmZSXD3Fr1rXxRNtNqKP5E=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RegCIc0ow+vROqbfk7z8JKAlszM=
-			</data>
-			<key>hash2</key>
-			<data>
-			OmgBpejHfM6HJIRbXbJqmdzlQUdXJK9+UQFSWiQprTg=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pECSA73ODHRNcaaRZPEDXvAvdaY=
-			</data>
-			<key>hash2</key>
-			<data>
-			UMaVtCOW1ddV/biGSHwAB1j3fSKq5iy0ixesUCNwC8I=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NdjIRKY0Yo+KUHKFrXVYh4V30X4=
-			</data>
-			<key>hash2</key>
-			<data>
-			rX9S2YO4OaDh9yw9HNtsBSNTH30NrLfB2Orz2fK8bLY=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1CVWudGGpQo4Sx659gF4kfwrjxs=
-			</data>
-			<key>hash2</key>
-			<data>
-			zQGQSzRvUb4FlOELXbQ0ZwAGT/A1/ktoKSeR3Ni/e+w=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rX2MFbG/gJ+8LHIAFgjVl7y/U+4=
-			</data>
-			<key>hash2</key>
-			<data>
-			I+wNw54KZxIxUN+XgNdUHXp/sQ+CtctKwZmw9JOJXOE=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1xQOlsWoZkdu0L36WmMmuvaUaD8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ms3RtC/f56jQGK1Ndxho2W6GSg9VN0ulRddFPEMkI30=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pInenQQ6R8ly1DkSpgy5dO4kfzs=
-			</data>
-			<key>hash2</key>
-			<data>
-			E5BsA1mE3oyt1XfHMYdzv2f7DyfrFJPN0F0ooR7T9OQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n9rXH11IcEPW9NSNTHXHAjyXaV0=
-			</data>
-			<key>hash2</key>
-			<data>
-			QNUpsp43HK58l9eQR7Tl1d5YQCnmaySZ7AFmMTU9mrE=
-			</data>
-		</dict>
 		<key>Headers/RescueChat.h</key>
 		<dict>
 			<key>hash</key>
@@ -667,11 +521,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DHKcMbhxU5fYb4IfcserN1wvANA=
+			QfjezwmOQI5W4PsD1QRJ1K3n4vE=
 			</data>
 			<key>hash2</key>
 			<data>
-			4LTMLS4dNc4XLsBC4Cv+QQAnYZafsfyggICvMQBURfE=
+			WFUCxaBSX+a/xnT1uJi1cxB2k3iZ4mpnzz/f3YjP/A0=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/arm64.swiftdoc</key>
@@ -689,11 +543,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RdjLFAaEWZxxb/+L+lAEf7pNRiU=
+			JC6XBgjuBOlx6C8ymx8S0cjRqqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7xpDRVbEjkVAcLViFuNfCz2mGQA1/evkRzDcS/CLRpk=
+			0MI1ykU8u8zo4Q5eiVBzWGMCcBGDBpTaSeW55a+RsqY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1018,6 +872,17 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>strip-frameworks.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l9vZtyD/fGhqCGrIdssJkhXJE0E=
+			</data>
+			<key>hash2</key>
+			<data>
+			gLJaw5DrbvHlh8A+R28brIpo6JBZg9ZkbeNLrJlMB3M=
+			</data>
 		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
