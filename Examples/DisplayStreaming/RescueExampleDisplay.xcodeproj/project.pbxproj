@@ -131,6 +131,7 @@
 				75AF3B871BB53D6500880F14 /* Frameworks */,
 				75AF3B881BB53D6500880F14 /* Resources */,
 				DB9C4BDC1D1A88E900B68F8E /* Embed Frameworks */,
+				75DAA1CD1D4B7F3D00216F1E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -185,6 +186,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75DAA1CD1D4B7F3D00216F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/RescueCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75AF3B861BB53D6500880F14 /* Sources */ = {

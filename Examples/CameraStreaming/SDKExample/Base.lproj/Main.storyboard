@@ -109,7 +109,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="8E5-5f-9ic"/>
                                                             <constraint firstAttribute="height" constant="30" id="xFa-5V-nbX"/>
                                                         </constraints>
-                                                        <state key="normal" title="Flaslight"/>
+                                                        <state key="normal" title="Flashlight"/>
                                                         <connections>
                                                             <action selector="flashlightButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rU-pq-T8j"/>
                                                         </connections>
