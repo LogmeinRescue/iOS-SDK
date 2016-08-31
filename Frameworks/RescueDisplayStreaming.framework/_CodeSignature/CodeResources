@@ -4,46 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<data>
-		5p5Ru2GG8pX72hVkzp6WSThBlYI=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		XAC+/u/7K9mFAYZ7YpREw975cgs=
-		</data>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<data>
-		7eK/IjfJkWB7goieEWjAAop01ig=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		DCLOmcsbbjSUo6a9Hn9trGZG1Gc=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		j32QnU1hWQEi446pSEfmvBYqsf8=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		qUauAlwH+w9hL5TnSvyw6XXjOAY=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		bg4RBl8YqCgqS27H4nHY+MPnKfk=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		KjvSvlcCTW1V7f7sNDCX1O7hvv8=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		YwcGSMT08DHIkjCtcS5LMTKBPnk=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		SgHhfe/yC+IWTgnZQnRMLNzrx/w=
-		</data>
 		<key>Headers/RescueDisplay+WebView.h</key>
 		<data>
 		7ggG/HGvdgaRX49D5YN1BbF+rMw=
@@ -66,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n5jXSqFDuv40aPxut0PCMOk87LE=
+		a9ggIvDC6pneUrtaCrM29EC91v0=
 		</data>
 		<key>Modules/RescueDisplayStreaming.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -74,7 +34,7 @@
 		</data>
 		<key>Modules/RescueDisplayStreaming.swiftmodule/arm.swiftmodule</key>
 		<data>
-		sZQpJygr9R2WvpOhaRdABL7Xf4A=
+		urpdONyNy9KN2A9yGtuA8j6jHOk=
 		</data>
 		<key>Modules/RescueDisplayStreaming.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,7 +42,7 @@
 		</data>
 		<key>Modules/RescueDisplayStreaming.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		5T1ZtS6kd3C8g+JzKBbA65h1Ggk=
+		xPDQl46Va+SOLKMDABQGvayRP7E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,116 +51,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libswiftContacts.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5p5Ru2GG8pX72hVkzp6WSThBlYI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ilo6jUkZF3CbY54wpK2sa1Zz6PXi6e7CQkLrs+0U+8A=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XAC+/u/7K9mFAYZ7YpREw975cgs=
-			</data>
-			<key>hash2</key>
-			<data>
-			byWB8FeExCb5kMfEpUP6FpsHc/bkez0ANo622L6yebQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreBluetooth.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7eK/IjfJkWB7goieEWjAAop01ig=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q4SyVftR0HvC/nItflBCTf12ApukdM8SpKXwN8Ai7oM=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DCLOmcsbbjSUo6a9Hn9trGZG1Gc=
-			</data>
-			<key>hash2</key>
-			<data>
-			HyLw229IrMxC+8LuxlUpeuPv7wbIPu4g9qxiQJksQs4=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			j32QnU1hWQEi446pSEfmvBYqsf8=
-			</data>
-			<key>hash2</key>
-			<data>
-			x8Cd9EfzTa9maKcZRGZZKcic+jbTO9VjXj66EGXX/aw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qUauAlwH+w9hL5TnSvyw6XXjOAY=
-			</data>
-			<key>hash2</key>
-			<data>
-			dVMmCg36yUmmkFzoDADuZvWXjfGxxjBscq9JQK/dYn0=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bg4RBl8YqCgqS27H4nHY+MPnKfk=
-			</data>
-			<key>hash2</key>
-			<data>
-			IwATKMrqW7D/uOYM06olQfn0YDIFxJIkGXRTut95JLA=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KjvSvlcCTW1V7f7sNDCX1O7hvv8=
-			</data>
-			<key>hash2</key>
-			<data>
-			TaJvh9++SicUQP4/YVz3N2klAIVieCuxIGCvSG+80bc=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YwcGSMT08DHIkjCtcS5LMTKBPnk=
-			</data>
-			<key>hash2</key>
-			<data>
-			D7DuQLsHd/BTrqIKQQfFqhmQRH/hSc2AzbA3LKBp9Uc=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SgHhfe/yC+IWTgnZQnRMLNzrx/w=
-			</data>
-			<key>hash2</key>
-			<data>
-			df5BFTwpBXzQE9D9n3ELf5fr/iN7NmBNfh/legODiHE=
-			</data>
-		</dict>
 		<key>Headers/RescueDisplay+WebView.h</key>
 		<dict>
 			<key>hash</key>
@@ -271,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sZQpJygr9R2WvpOhaRdABL7Xf4A=
+			urpdONyNy9KN2A9yGtuA8j6jHOk=
 			</data>
 			<key>hash2</key>
 			<data>
-			bQ3PxqUfIxVlgrJfYp3R1IbEL+puojuysehYup2JLkY=
+			wlKyItBivKPqTQYFwAX5GEw/uA/KTS3p4N8pcp4rfNg=
 			</data>
 		</dict>
 		<key>Modules/RescueDisplayStreaming.swiftmodule/arm64.swiftdoc</key>
@@ -293,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5T1ZtS6kd3C8g+JzKBbA65h1Ggk=
+			xPDQl46Va+SOLKMDABQGvayRP7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			NvSGX8Tky94f+CmW90YEwBXm1bczQgCObS1fvK6opwI=
+			nO0txn4dUMLjT+yzjIzEKwkhFpEmlnTxdU9quPXpxNw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
