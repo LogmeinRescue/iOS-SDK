@@ -131,6 +131,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "LogMeIn Inc.";
+				TargetAttributes = {
+					DB4004B61CBCD0A8007387CB = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = DB9FB6361CB4ECB900572C23 /* Build configuration list for PBXProject "RescueExampleCamera" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,6 +225,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RescueExampleCamera;
 				PRODUCT_NAME = ExampleCamera;
 				PUMPKIN_HOME = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -232,6 +238,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RescueExampleCamera;
 				PRODUCT_NAME = ExampleCamera;
 				PUMPKIN_HOME = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -326,6 +333,7 @@
 				PUMPKIN_HOME = $HOME/Develope/pumpkin;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "SDKExample/SDKStreamExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7";

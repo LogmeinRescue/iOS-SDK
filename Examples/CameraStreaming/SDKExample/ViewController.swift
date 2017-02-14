@@ -35,84 +35,84 @@ class ViewController: UIViewController, RescueSessionDelegate {
         setDefaultValues()
         
         // Set the unique identifier for the app
-        RescueSession.sharedInstance().apiKey = NSUserDefaults.standardUserDefaults().objectForKey("apiKey") as! String
+        RescueSession.sharedInstance().apiKey = UserDefaults.standard.object(forKey: "apiKey") as! String
 
         // Set self as delegate for the Rescue Session object
         RescueSession.sharedInstance().delegate = self
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // start rendering the local stream to the rende view
-        RescueCamera.sharedInstance().startLocalStreamRenderingInView(cameraRenderView)
+        RescueCamera.sharedInstance().startLocalStreamRendering(in: cameraRenderView)
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    override var preferredStatusBarStyle : UIStatusBarStyle
     {
-        return .LightContent
+        return .lightContent
     }
 
     /// Set default values for session start parameters.
-    private func setDefaultValues() {
+    fileprivate func setDefaultValues() {
         // set default value for channel ID
-        if NSUserDefaults.standardUserDefaults().objectForKey("channelID") == nil {
-            NSUserDefaults.standardUserDefaults().setObject("", forKey: "channelID")
+        if UserDefaults.standard.object(forKey: "channelID") == nil {
+            UserDefaults.standard.set("", forKey: "channelID")
         }
         
         // set default value for channel name
-        if NSUserDefaults.standardUserDefaults().objectForKey("channelName") == nil {
-            NSUserDefaults.standardUserDefaults().setObject("", forKey: "channelName")
+        if UserDefaults.standard.object(forKey: "channelName") == nil {
+            UserDefaults.standard.set("", forKey: "channelName")
         }
         
         // set default value for company ID
-        if NSUserDefaults.standardUserDefaults().objectForKey("companyID") == nil {
-            NSUserDefaults.standardUserDefaults().setObject("", forKey: "companyID")
+        if UserDefaults.standard.object(forKey: "companyID") == nil {
+            UserDefaults.standard.set("", forKey: "companyID")
         }
         
         // set default value for API key
-        if NSUserDefaults.standardUserDefaults().objectForKey("apiKey") == nil {
-            NSUserDefaults.standardUserDefaults().setObject("", forKey: "apiKey")
+        if UserDefaults.standard.object(forKey: "apiKey") == nil {
+            UserDefaults.standard.set("", forKey: "apiKey")
         }
     }
     
     // MARK: RescueSessionDelegate
 
-    func rescueSessionStatusDidChange(status: RescueSessionStatus) {
+    func rescueSessionStatusDidChange(_ status: RescueSessionStatus) {
         print("status \(status.rawValue)")
         
         // set the title for the status label based of the session status
         switch status {
-        case .Connected:
+        case .connected:
             statusLabel.text = "Connected"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .Connecting:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .connecting:
             statusLabel.text = "Connecting"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .ConnectionLost:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .connectionLost:
             statusLabel.text = "Connection lost"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .Disconnected:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .disconnected:
             statusLabel.text = "Disconnected"
-            connectButton.setTitle("Connect", forState: .Normal)
-        case .Disconnecting:
+            connectButton.setTitle("Connect", for: UIControlState())
+        case .disconnecting:
             statusLabel.text = "Disconnecting"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .OnHold:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .onHold:
             statusLabel.text = "On hold"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .Transferred:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .transferred:
             statusLabel.text = "Transfering"
-            connectButton.setTitle("Disconnect", forState: .Normal)
-        case .WaitingForTechnician:
+            connectButton.setTitle("Disconnect", for: UIControlState())
+        case .waitingForTechnician:
             statusLabel.text = "Waiting for technician"
-            connectButton.setTitle("Disconnect", forState: .Normal)
+            connectButton.setTitle("Disconnect", for: UIControlState())
         default:
             statusLabel.text = "Idle"
-            connectButton.setTitle("Connect", forState: .Normal)
+            connectButton.setTitle("Connect", for: UIControlState())
         }
     }
     
-    func rescueSessionError(errorCode: RescueError, withUserInfo userInfo: [NSObject : AnyObject]!) {
+    func rescueSessionError(_ errorCode: RescueError, withUserInfo userInfo: [AnyHashable: Any]!) {
         print("error \(errorCode.rawValue) \(userInfo)")
     }
     
@@ -120,7 +120,7 @@ class ViewController: UIViewController, RescueSessionDelegate {
     
     @IBAction func flashlightButtonPressed()
     {
-        if RescueCamera.sharedInstance().flashState == .Off
+        if RescueCamera.sharedInstance().flashState == .off
         {
             RescueCamera.sharedInstance().turnOnFlash()
         }
@@ -144,19 +144,19 @@ class ViewController: UIViewController, RescueSessionDelegate {
 
     @IBAction func connectButtonPressed()
     {
-        if RescueSession.sharedInstance().sessionStatus == .Disconnected ||
-           RescueSession.sharedInstance().sessionStatus == .Idle
+        if RescueSession.sharedInstance().sessionStatus == .disconnected ||
+           RescueSession.sharedInstance().sessionStatus == .idle
         {
             // create an alert controller
-            let alertController = UIAlertController(title: "Connect", message: nil, preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Connect", message: nil, preferredStyle: .alert)
 
             // create actions (buttons) for the alert:
             // private session button
-            let pinAction = UIAlertAction(title: "Private Session", style: .Default) { _ in self.privateSession() }
+            let pinAction = UIAlertAction(title: "Private Session", style: .default) { _ in self.privateSession() }
             // channel id session button
-            let channelIDAction = UIAlertAction(title: "Channel ID Session", style: .Default) { _ in self.channelIDSession() }
+            let channelIDAction = UIAlertAction(title: "Channel ID Session", style: .default) { _ in self.channelIDSession() }
             // channel name session button
-            let channelNameAction = UIAlertAction(title: "Channel name Session", style: .Default) { _ in self.channelNameSession() }
+            let channelNameAction = UIAlertAction(title: "Channel name Session", style: .default) { _ in self.channelNameSession() }
             
             // add the actions to the controller
             alertController.addAction(pinAction)
@@ -165,131 +165,131 @@ class ViewController: UIViewController, RescueSessionDelegate {
             alertController.addAction(cancelAction())
             
             // present the alert
-            presentViewController(alertController, animated: true) {}
+            present(alertController, animated: true) {}
         } else {
-            RescueSession.sharedInstance().endSession()
+            RescueSession.sharedInstance().end()
         }
     }
     
     @IBAction func apiKeyButtonPressed()
     {
-        let alertController = UIAlertController(title: "API key", message: nil, preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { _ in
+        let alertController = UIAlertController(title: "API key", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in
             if let apiKey = alertController.textFields![0].text {
                 RescueSession.sharedInstance().apiKey = apiKey
-                NSUserDefaults.standardUserDefaults().setObject(apiKey, forKey: "apiKey")
+                UserDefaults.standard.set(apiKey, forKey: "apiKey")
             }
         })
         
-        alertController.addTextFieldWithConfigurationHandler { (textField) in
+        alertController.addTextField { (textField) in
             textField.placeholder = "API key"
-            if let apiKey = NSUserDefaults.standardUserDefaults().objectForKey("apiKey") as? String {
+            if let apiKey = UserDefaults.standard.object(forKey: "apiKey") as? String {
                 textField.text = apiKey
-                textField.keyboardAppearance = .Dark
+                textField.keyboardAppearance = .dark
             }
         }
 
         alertController.addAction(okAction)
         alertController.addAction(cancelAction())
         
-        presentViewController(alertController, animated: true) {}
+        present(alertController, animated: true) {}
     }
     
     func cancelAction() -> UIAlertAction {
-        return UIAlertAction(title: "Cancel", style: .Cancel) { _ in }
+        return UIAlertAction(title: "Cancel", style: .cancel) { _ in }
     }
     
     // MARK: Start session
     
     func privateSession() {
         
-        let alertController = UIAlertController(title: "Private session", message: nil, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Private session", message: nil, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Connect", style: .Default, handler: { _ in
+        let action = UIAlertAction(title: "Connect", style: .default, handler: { _ in
             if let pin = alertController.textFields![0].text {
-                RescueSession.sharedInstance().sessionStartParameters.startWithPinCode(pin)
-                RescueSession.sharedInstance().startSession()
+                RescueSession.sharedInstance().sessionStartParameters.start(withPinCode: pin)
+                RescueSession.sharedInstance().start()
             }
         })
-        action.enabled = false
+        action.isEnabled = false
         
         alertController.addAction(action)
         alertController.addAction(cancelAction())
 
-        alertController.addTextFieldWithConfigurationHandler { (textField) in
+        alertController.addTextField { (textField) in
             textField.placeholder = "PIN code"
-            textField.keyboardType = .NumberPad
-            textField.keyboardAppearance = .Dark
+            textField.keyboardType = .numberPad
+            textField.keyboardAppearance = .dark
 
-            NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification, object: textField, queue: NSOperationQueue.mainQueue()) { (notification) in
-                action.enabled = textField.text?.characters.count == 6
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                action.isEnabled = textField.text?.characters.count == 6
             }
         }
 
-        presentViewController(alertController, animated: true) {}
+        present(alertController, animated: true) {}
     }
     
     func channelIDSession() {
         
-        let alertController = UIAlertController(title: "Channel ID session", message: nil, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Channel ID session", message: nil, preferredStyle: .alert)
         
-        let connectAction = UIAlertAction(title: "Connect", style: .Default, handler: { _ in
+        let connectAction = UIAlertAction(title: "Connect", style: .default, handler: { _ in
             if let channel = alertController.textFields![0].text {
-                NSUserDefaults.standardUserDefaults().setObject(channel, forKey: "channelID")
-                RescueSession.sharedInstance().sessionStartParameters.startWithChannelId(channel)
-                RescueSession.sharedInstance().startSession()
+                UserDefaults.standard.set(channel, forKey: "channelID")
+                RescueSession.sharedInstance().sessionStartParameters.start(withChannelId: channel)
+                RescueSession.sharedInstance().start()
             }
         })
         
         alertController.addAction(connectAction)
         alertController.addAction(cancelAction())
 
-        alertController.addTextFieldWithConfigurationHandler { (textField) in
+        alertController.addTextField { (textField) in
             textField.placeholder = "Channel ID"
-            if let channel = NSUserDefaults.standardUserDefaults().objectForKey("channelID") as? String {
+            if let channel = UserDefaults.standard.object(forKey: "channelID") as? String {
                 textField.text = channel
-                textField.keyboardType = .NumberPad
-                textField.keyboardAppearance = .Dark
+                textField.keyboardType = .numberPad
+                textField.keyboardAppearance = .dark
             }
         }
         
-        presentViewController(alertController, animated: true) {}
+        present(alertController, animated: true) {}
     }
 
     func channelNameSession() {
         
-        let alertController = UIAlertController(title: "Channel name session", message: nil, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Channel name session", message: nil, preferredStyle: .alert)
         
-        let connectAction = UIAlertAction(title: "Connect", style: .Default, handler: { _ in
+        let connectAction = UIAlertAction(title: "Connect", style: .default, handler: { _ in
             if let channel = alertController.textFields![0].text, let company = alertController.textFields![1].text {
-                NSUserDefaults.standardUserDefaults().setObject(channel, forKey: "channelName")
-                NSUserDefaults.standardUserDefaults().setObject(company, forKey: "companyID")
-                RescueSession.sharedInstance().sessionStartParameters.startWithCompanyId(company, andChannelName: channel)
-                RescueSession.sharedInstance().startSession()
+                UserDefaults.standard.set(channel, forKey: "channelName")
+                UserDefaults.standard.set(company, forKey: "companyID")
+                RescueSession.sharedInstance().sessionStartParameters.start(withCompanyId: company, andChannelName: channel)
+                RescueSession.sharedInstance().start()
             }
         })
         
         alertController.addAction(connectAction)
         alertController.addAction(cancelAction())
         
-        alertController.addTextFieldWithConfigurationHandler { (textField) in
+        alertController.addTextField { (textField) in
             textField.placeholder = "Channel name"
-            if let channel = NSUserDefaults.standardUserDefaults().objectForKey("channelName") as? String {
+            if let channel = UserDefaults.standard.object(forKey: "channelName") as? String {
                 textField.text = channel
-                textField.keyboardAppearance = .Dark
+                textField.keyboardAppearance = .dark
             }
         }
         
-        alertController.addTextFieldWithConfigurationHandler { (textField) in
+        alertController.addTextField { (textField) in
             textField.placeholder = "Company ID"
-            if let company = NSUserDefaults.standardUserDefaults().objectForKey("companyID") as? String {
+            if let company = UserDefaults.standard.object(forKey: "companyID") as? String {
                 textField.text = company
-                textField.keyboardType = .NumberPad
-                textField.keyboardAppearance = .Dark
+                textField.keyboardType = .numberPad
+                textField.keyboardAppearance = .dark
             }
         }
         
-        presentViewController(alertController, animated: true) {}
+        present(alertController, animated: true) {}
     }
 
 }

@@ -11,7 +11,6 @@
 
 @interface ViewController ()  <RescueSessionDelegate, RescueLoggerDelegate, RescueChatDelegate, UITextFieldDelegate>
 
-@property (nonatomic, weak) IBOutlet UITextView* textView;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
 
 @property (nonatomic, weak) IBOutlet UILabel* typingLabel;
@@ -37,14 +36,20 @@
     self.dateFormatter.timeStyle = NSDateFormatterShortStyle;
     
     // set API key
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kApiKeyDefaultsKey];
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kApiKeyDefaultsKey]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kApiKeyDefaultsKey];
+    }
     
     // set channel id
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kChannelIdDefaultsKey];
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kChannelIdDefaultsKey]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kChannelIdDefaultsKey];
+    }
     
     // set company id and channel name
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kCompanyIdDefaultsKey];
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kChannelNameDefaultsKey];
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kCompanyIdDefaultsKey]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kCompanyIdDefaultsKey];
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:kChannelNameDefaultsKey];
+    }
 
     // set delegate objects of RescueSession
     [RescueSession sharedInstance].delegate = self;
@@ -241,9 +246,7 @@
         speaker = @"You";
     }
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self appendTextToMessagesView:[NSString stringWithFormat:@"\n [%@] %@: %@", [self.dateFormatter stringFromDate:[NSDate date]], speaker, chatMessage.message]];
-    });
+    [self appendTextToMessagesView:[NSString stringWithFormat:@"\n [%@] %@: %@", [self.dateFormatter stringFromDate:[NSDate date]], speaker, chatMessage.message]];
 }
 
 

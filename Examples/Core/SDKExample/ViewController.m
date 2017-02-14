@@ -11,7 +11,6 @@
 
 @interface ViewController ()  <RescueSessionDelegate, RescueLoggerDelegate, RescueChatDelegate, UITextFieldDelegate>
 
-@property (nonatomic, weak) IBOutlet UITextView* textView;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
 
 @property (nonatomic, weak) IBOutlet UILabel* typingLabel;
@@ -213,9 +212,7 @@
         speaker = @"You";
     }
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self appendTextToMessagesView:[NSString stringWithFormat:@"\n [%@] %@: %@", [self.dateFormatter stringFromDate:[NSDate date]], speaker, chatMessage.message]];
-    });
+    [self appendTextToMessagesView:[NSString stringWithFormat:@"\n [%@] %@: %@", [self.dateFormatter stringFromDate:[NSDate date]], speaker, chatMessage.message]];
 }
 
 
