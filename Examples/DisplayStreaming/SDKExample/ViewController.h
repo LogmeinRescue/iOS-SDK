@@ -23,4 +23,6 @@ static NSString* const kApiKeyDefaultsKey = @"RSSDKApiKeyDefaultsKey";
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextView* textView;
+
 @end
