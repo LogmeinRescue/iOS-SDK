@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RescueSession Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RescueSession" class="dashAnchor"></a>
+    <a title="RescueSession Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RescueCore Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RescueCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RescueSession Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RescueCamera.html">RescueCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChat.html">RescueChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChatMessage.html">RescueChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueDisplay.html">RescueDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueLocalization.html">RescueLocalization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSession.html">RescueSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraDevice.html">RescueCameraDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraFlash.html">RescueCameraFlash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueChatMessageType.html">RescueChatMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueDisplayMode.html">RescueDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueError.html">RescueError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueLocalizationStringIdentifier.html">RescueLocalizationStringIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueCameraDelegate.html">RescueCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueChatDelegate.html">RescueChatDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueDisplayDelegate.html">RescueDisplayDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueSessionDelegate.html">RescueSessionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RescueSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueSession</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">RescueBackgroundDelegate</span><span class="p">,</span> <span class="kt">RescueGatewayDelegate</span><span class="p">,</span> <span class="kt">RescueSessionCreatorDelegate</span><span class="p">,</span> <span class="kt">RescueChatManagerDelegate</span><span class="p">,</span> <span class="kt">RescueChatMessagePacketHandlerDelegate</span><span class="p">,</span> <span class="kt">RescueDeviceViewManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>The connection between your application and the Rescue Technician Console is represented by a <strong>RescueSession</strong> object. This is a singleton object you access it by calling the <strong>sharedInstance</strong> class method.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configure%20session"></a>
+                <a name="//apple_ref/swift/Section/Configure session" class="dashAnchor"></a>
+                <a href="#/Configure%20session">
+                  <h3 class="section-name">Configure session</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession6apiKeySS"></a>
+                    <a name="//apple_ref/swift/Property/apiKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession6apiKeySS">apiKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for the app.</p>
+
+<p>Every app need an API key. Starting a Rescue session will always fail without it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">apiKey</span> <span class="o">=</span> <span class="s">""</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession8delegateXwGSqPS_21RescueSessionDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession8delegateXwGSqPS_21RescueSessionDelegate__">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object that acts as the delegate of <strong>RescueSession</strong>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RescueSessionDelegate.html">RescueSessionDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession22sessionStartParametersCS_28RescueSessionStartParameters"></a>
+                    <a name="//apple_ref/swift/Property/sessionStartParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession22sessionStartParametersCS_28RescueSessionStartParameters">sessionStartParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This property stores the session start configuration.</p>
+
+<p>Automatically created, call its methods to configure it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">sessionStartParameters</span> <span class="o">=</span> <span class="kt"><a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a></span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Session%20information"></a>
+                <a name="//apple_ref/swift/Section/Session information" class="dashAnchor"></a>
+                <a href="#/Session%20information">
+                  <h3 class="section-name">Session information</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession13sessionStatusOS_19RescueSessionStatus"></a>
+                    <a name="//apple_ref/swift/Property/sessionStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession13sessionStatusOS_19RescueSessionStatus">sessionStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State of the session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">sessionStatus</span> <span class="o">=</span> <span class="kt"><a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a></span><span class="o">.</span><span class="n">idle</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession12operatorNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/operatorName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession12operatorNameGSqSS_">operatorName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Name of the technician.</p>
+
+<p>This property is KVO compliant</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">operatorName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession12sessionStartGSqV10Foundation4Date_"></a>
+                    <a name="//apple_ref/swift/Property/sessionStart" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession12sessionStartGSqV10Foundation4Date_">sessionStart</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date-time of the start of the session.</p>
+
+<p>This property is KVO compliant</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">sessionStart</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession15transmittedDataSi"></a>
+                    <a name="//apple_ref/swift/Property/transmittedData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession15transmittedDataSi">transmittedData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transmitted data during session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transmittedData</span><span class="p">:</span> <span class="n">size_t</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueSession21afterSessionSurveyURLGSqV10Foundation3URL_"></a>
+                    <a name="//apple_ref/swift/Property/afterSessionSurveyURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueSession21afterSessionSurveyURLGSqV10Foundation3URL_">afterSessionSurveyURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URL of the customer survey.</p>
+
+<p>The URL can change during a support session, so only get this property after ending the support session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">afterSessionSurveyURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Control%20session%20lifecycle"></a>
+                <a name="//apple_ref/swift/Section/Control session lifecycle" class="dashAnchor"></a>
+                <a href="#/Control%20session%20lifecycle">
+                  <h3 class="section-name">Control session lifecycle</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueSession12startSessionFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueSession12startSessionFT_T_">startSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start a Rescue session using the configuration from the <strong>sessionStartParameters</strong> object.</p>
+
+<p>The <strong>startSession</strong> method is asynchronous, it will return immediately. You will be notified via the <strong>delegate</strong> about the outcome of the session start.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueSession10endSessionFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/endSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueSession10endSessionFT_T_">endSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End the Rescue session.</p>
+
+<p>The <strong>endSession</strong> method is asynchronous, it will return immediately. You will be notified via the <strong>delegate</strong> about the outcome of the session start.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">endSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueSession5resetFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueSession5resetFT_T_">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clean up the Rescue SDK, delete every data stored by it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Key-Value%20Observation"></a>
+                <a name="//apple_ref/swift/Section/Key-Value Observation" class="dashAnchor"></a>
+                <a href="#/Key-Value%20Observation">
+                  <h3 class="section-name">Key-Value Observation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueSession12observeValueFT10forKeyPathGSqSS_2ofGSqP__6changeGSqGVs10DictionaryVSC19NSKeyValueChangeKeyP___7contextGSqSv__T_"></a>
+                    <a name="//apple_ref/swift/Method/observeValue(forKeyPath:of:change:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueSession12observeValueFT10forKeyPathGSqSS_2ofGSqP__6changeGSqGVs10DictionaryVSC19NSKeyValueChangeKeyP___7contextGSqSv__T_">observeValue(forKeyPath:of:change:context:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key-Value Observation</p>
+
+<p>Note: It is not intended to call this method directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">observeValue</span><span class="p">(</span><span class="n">forKeyPath</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">of</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">change</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSKeyValueChangeKey</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC10RescueCore13RescueSession30automaticallyNotifiesObserversFT6forKeySS_Sb"></a>
+                    <a name="//apple_ref/swift/Method/automaticallyNotifiesObservers(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC10RescueCore13RescueSession30automaticallyNotifiesObserversFT6forKeySS_Sb">automaticallyNotifiesObservers(forKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key-Value Observation</p>
+
+<p>Note: It is not intended to call this method directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">automaticallyNotifiesObservers</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC10RescueCore13RescueSession14sharedInstanceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC10RescueCore13RescueSession14sharedInstanceS0_">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueSession</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2017-06-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
