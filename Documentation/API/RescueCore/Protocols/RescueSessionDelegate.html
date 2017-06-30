@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RescueSessionDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/RescueSessionDelegate" class="dashAnchor"></a>
+    <a title="RescueSessionDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RescueCore Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RescueCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RescueSessionDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RescueCamera.html">RescueCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChat.html">RescueChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChatMessage.html">RescueChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueDisplay.html">RescueDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueLocalization.html">RescueLocalization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSession.html">RescueSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraDevice.html">RescueCameraDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraFlash.html">RescueCameraFlash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueChatMessageType.html">RescueChatMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueDisplayMode.html">RescueDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueError.html">RescueError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueLocalizationStringIdentifier.html">RescueLocalizationStringIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueCameraDelegate.html">RescueCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueChatDelegate.html">RescueChatDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueDisplayDelegate.html">RescueDisplayDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueSessionDelegate.html">RescueSessionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RescueSessionDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RescueSessionDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <strong>RescueSessionDelegate</strong> protocol defines a set of methods you can use to get notified about session related events.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10RescueCore21RescueSessionDelegate28rescueSessionStatusDidChangeFOS_19RescueSessionStatusT_"></a>
+                    <a name="//apple_ref/swift/Method/rescueSessionStatusDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10RescueCore21RescueSessionDelegate28rescueSessionStatusDidChangeFOS_19RescueSessionStatusT_">rescueSessionStatusDidChange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that the state of the session has changed.</p>
+
+<p>This method is optional.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">rescueSessionStatusDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new session state.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10RescueCore21RescueSessionDelegate18rescueSessionErrorFTOS_11RescueError12withUserInfoGSqGVs10DictionarySSPs9AnyObject____T_"></a>
+                    <a name="//apple_ref/swift/Method/rescueSessionError(_:withUserInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10RescueCore21RescueSessionDelegate18rescueSessionErrorFTOS_11RescueError12withUserInfoGSqGVs10DictionarySSPs9AnyObject____T_">rescueSessionError(_:withUserInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that an error occured during session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">rescueSessionError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueError.html">RescueError</a></span><span class="p">,</span> <span class="n">withUserInfo</span> <span class="nv">userInfo</span><span class="p">:[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error code.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>More info about the error. In case of <strong>errorCode</strong> <em>RescueErrorNoTechnicianAvailable</em>, the dictionary contains the URL set in the administration center if there are no technicians on the channel.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2017-06-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

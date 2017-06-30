@@ -1,0 +1,102 @@
+
+/* Class = "UINavigationItem"; title = "Rescue Display Example"; ObjectID = "04o-uQ-NJo"; */
+"04o-uQ-NJo.title" = "Rescue Display Example";
+
+/* Class = "UISegmentedControl"; 1Cw-FC-Vmd.segmentTitles[0] = "App screen"; ObjectID = "1Cw-FC-Vmd"; */
+"1Cw-FC-Vmd.segmentTitles[0]" = "App screen";
+
+/* Class = "UISegmentedControl"; 1Cw-FC-Vmd.segmentTitles[1] = "Chat view"; ObjectID = "1Cw-FC-Vmd"; */
+"1Cw-FC-Vmd.segmentTitles[1]" = "Chat view";
+
+/* Class = "UISegmentedControl"; 1Cw-FC-Vmd.segmentTitles[2] = "Disable"; ObjectID = "1Cw-FC-Vmd"; */
+"1Cw-FC-Vmd.segmentTitles[2]" = "Disable";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "2jO-Xr-jkz"; */
+"2jO-Xr-jkz.title" = "Settings";
+
+/* Class = "UISegmentedControl"; 66o-y5-yTb.segmentTitles[0] = "Channel id"; ObjectID = "66o-y5-yTb"; */
+"66o-y5-yTb.segmentTitles[0]" = "Channel id";
+
+/* Class = "UISegmentedControl"; 66o-y5-yTb.segmentTitles[1] = "Channel name"; ObjectID = "66o-y5-yTb"; */
+"66o-y5-yTb.segmentTitles[1]" = "Channel name";
+
+/* Class = "UISegmentedControl"; 66o-y5-yTb.segmentTitles[2] = "Pin code"; ObjectID = "66o-y5-yTb"; */
+"66o-y5-yTb.segmentTitles[2]" = "Pin code";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "6RL-i4-Deh"; */
+"6RL-i4-Deh.title" = "Save";
+
+/* Class = "UISwitch"; accessibilityLabel = "Disable whiteboard switch"; ObjectID = "6tI-mJ-rKg"; */
+"6tI-mJ-rKg.accessibilityLabel" = "Disable whiteboard switch";
+
+/* Class = "UILabel"; text = "Channel ID"; ObjectID = "7SL-Mp-FVi"; */
+"7SL-Mp-FVi.text" = "Channel ID";
+
+/* Class = "UILabel"; text = "Channel Name"; ObjectID = "9Sv-xa-uXP"; */
+"9Sv-xa-uXP.text" = "Channel Name";
+
+/* Class = "UITextField"; accessibilityLabel = "Channel ID"; ObjectID = "9Zo-kv-xVU"; */
+"9Zo-kv-xVU.accessibilityLabel" = "Channel ID";
+
+/* Class = "UILabel"; text = "API key"; ObjectID = "AFQ-wU-tW6"; */
+"AFQ-wU-tW6.text" = "API key";
+
+/* Class = "UITableViewSection"; headerTitle = "Screen share options"; ObjectID = "BRZ-em-sHU"; */
+"BRZ-em-sHU.headerTitle" = "Screen share options";
+
+/* Class = "UILabel"; text = "Company ID"; ObjectID = "HrM-OE-YlJ"; */
+"HrM-OE-YlJ.text" = "Company ID";
+
+/* Class = "UITableViewSection"; headerTitle = "App parameters"; ObjectID = "Np3-Xz-vsl"; */
+"Np3-Xz-vsl.headerTitle" = "App parameters";
+
+/* Class = "UILabel"; text = "Disable whiteboard"; ObjectID = "Or5-uQ-3Qf"; */
+"Or5-uQ-3Qf.text" = "Disable whiteboard";
+
+/* Class = "UITableViewSection"; headerTitle = "Session start parameters"; ObjectID = "SNq-Ud-Bcc"; */
+"SNq-Ud-Bcc.headerTitle" = "Session start parameters";
+
+/* Class = "UISwitch"; accessibilityLabel = "Hide chat field switch"; ObjectID = "TvZ-Kd-MdP"; */
+"TvZ-Kd-MdP.accessibilityLabel" = "Hide chat field switch";
+
+/* Class = "UILabel"; text = "Disable laser pointer"; ObjectID = "W5x-iL-L7X"; */
+"W5x-iL-L7X.text" = "Disable laser pointer";
+
+/* Class = "UISwitch"; accessibilityLabel = "Disable laser pointer switch"; ObjectID = "Wl1-3a-Ab4"; */
+"Wl1-3a-Ab4.accessibilityLabel" = "Disable laser pointer switch";
+
+/* Class = "UITextView"; text = "--- Rescue SDK Example app started. ---"; ObjectID = "Xja-X5-rYY"; */
+"Xja-X5-rYY.text" = "--- Rescue SDK Example app started. ---";
+
+/* Class = "UITableViewSection"; headerTitle = "Screen share mode"; ObjectID = "Zpc-Vs-5xO"; */
+"Zpc-Vs-5xO.headerTitle" = "Screen share mode";
+
+/* Class = "UITextField"; accessibilityLabel = "API key"; ObjectID = "dDN-9G-ggz"; */
+"dDN-9G-ggz.accessibilityLabel" = "API key";
+
+/* Class = "UITableViewSection"; headerTitle = "Session start mode"; ObjectID = "eDi-WT-Qmz"; */
+"eDi-WT-Qmz.headerTitle" = "Session start mode";
+
+/* Class = "UITextField"; placeholder = "Type your message here"; ObjectID = "gqE-dt-tG3"; */
+"gqE-dt-tG3.placeholder" = "Type your message here";
+
+/* Class = "UITextField"; accessibilityLabel = "Company ID"; ObjectID = "hTF-PT-GEf"; */
+"hTF-PT-GEf.accessibilityLabel" = "Company ID";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "isP-At-KJv"; */
+"isP-At-KJv.title" = "Settings";
+
+/* Class = "UITextField"; accessibilityLabel = "Channel Name"; ObjectID = "vOI-RH-FnC"; */
+"vOI-RH-FnC.accessibilityLabel" = "Channel Name";
+
+/* Class = "UIBarButtonItem"; title = "Connect"; ObjectID = "wLa-8H-EY4"; */
+"wLa-8H-EY4.title" = "Connect";
+
+/* Class = "UILabel"; text = "Technician is typing..."; ObjectID = "woe-tc-KFG"; */
+"woe-tc-KFG.text" = "Technician is typing...";
+
+/* Class = "UILabel"; text = "Hide chat field"; ObjectID = "ynp-Qv-ZyR"; */
+"ynp-Qv-ZyR.text" = "Hide chat field";
+
+/* Class = "UILabel"; text = "App ID"; ObjectID = "z1Q-X8-k2z"; */
+"z1Q-X8-k2z.text" = "App ID";

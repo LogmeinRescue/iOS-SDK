@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RescueDisplay Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RescueDisplay" class="dashAnchor"></a>
+    <a title="RescueDisplay Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RescueCore Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RescueCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RescueDisplay Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RescueCamera.html">RescueCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChat.html">RescueChat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueChatMessage.html">RescueChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueDisplay.html">RescueDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueLocalization.html">RescueLocalization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSession.html">RescueSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraDevice.html">RescueCameraDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueCameraFlash.html">RescueCameraFlash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueChatMessageType.html">RescueChatMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueDisplayMode.html">RescueDisplayMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueError.html">RescueError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueLocalizationStringIdentifier.html">RescueLocalizationStringIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueCameraDelegate.html">RescueCameraDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueChatDelegate.html">RescueChatDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueDisplayDelegate.html">RescueDisplayDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RescueSessionDelegate.html">RescueSessionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RescueDisplay</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueDisplay</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <strong>RescueDisplay</strong> class provides methods and properties to manage display streaming functionality of the Rescue SDK.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueDisplay6enableFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/enable()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueDisplay6enableFT_T_">enable()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable display streaming functionality.</p>
+
+<p>If display streaming functionality is needed during the support session, call this method before starting the session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enable</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay8delegateXwGSqPS_21RescueDisplayDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay8delegateXwGSqPS_21RescueDisplayDelegate__">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object that acts as the delegate of <strong>RescueDisplay</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RescueDisplayDelegate.html">RescueDisplayDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay4modeOS_17RescueDisplayMode"></a>
+                    <a name="//apple_ref/swift/Property/mode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay4modeOS_17RescueDisplayMode">mode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display streaming mode.</p>
+
+<p>The value of this property configures which part of the app&rsquo;s screen will be streamed to the technician.</p>
+
+<ul>
+<li>Default value is <em>RescueDisplayModeAppScreen</em>, so the entire screen of the app will be streamed.</li>
+<li>If you want to disable display streaming set this property to <i>RescueDisplayModeDisabled</i>.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueDisplayMode.html">RescueDisplayMode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">appScreen</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configure%20views"></a>
+                <a name="//apple_ref/swift/Section/Configure views" class="dashAnchor"></a>
+                <a href="#/Configure%20views">
+                  <h3 class="section-name">Configure views</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay8rootViewGSqCSo6UIView_"></a>
+                    <a name="//apple_ref/swift/Property/rootView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay8rootViewGSqCSo6UIView_">rootView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View to stream to the technician if <strong>mode</strong> set to <em>RescueDisplayModeRootView</em>.</p>
+
+<p>The view will only be streamed if it is visible. The view&rsquo;s subviews will also be streamed.
+If the property is not set when display streaming is initiated by the technician, the SDK will call the <strong>delegate</strong>&lsquo;s <strong>rescueDisplayRequestViewToSendToTechnician</strong> method to get a view to stream.
+If there is still no view after this, the whole app screen will be streamed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rootView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay11hiddenViewsGVs3SetCSo6UIView_"></a>
+                    <a name="//apple_ref/swift/Property/hiddenViews" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay11hiddenViewsGVs3SetCSo6UIView_">hiddenViews</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set of UIViews to hide during display streaming.</p>
+
+<p>During capturing the display which will be streamed to the technican, the views in the set will be blacked out.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hiddenViews</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">UIView</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueDisplay7setViewFTCSo6UIView6hiddenSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/setView(_:hidden:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueDisplay7setViewFTCSo6UIView6hiddenSb_T_">setView(_:hidden:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add or remove view object from the <strong>hiddenViews</strong> set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="n">hidden</span> <span class="nv">hide</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view object to add or remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hide</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><em>true</em> if you want to add the view object to the <strong>hiddenViews</strong> set, <em>false</em> to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay26webViewsWithPasswordFieldsGVs3SetCSo9UIWebView_"></a>
+                    <a name="//apple_ref/swift/Property/webViewsWithPasswordFields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay26webViewsWithPasswordFieldsGVs3SetCSo9UIWebView_">webViewsWithPasswordFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set of web view objects which password fields should be hidden from the technican.</p>
+
+<p>Focused password fields will be hidden in these web views during screen sharing. Keyboard will be also hidden when a password field get focus in these web views.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">webViewsWithPasswordFields</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">UIWebView</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10RescueCore13RescueDisplay28setWebViewWithPasswordFieldsFTCSo9UIWebView6hiddenSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/setWebViewWithPasswordFields(_:hidden:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10RescueCore13RescueDisplay28setWebViewWithPasswordFieldsFTCSo9UIWebView6hiddenSb_T_">setWebViewWithPasswordFields(_:hidden:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add or remove web view object from the <strong>webViewsWithPasswordFields</strong> set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setWebViewWithPasswordFields</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIWebView</span><span class="p">,</span> <span class="n">hidden</span> <span class="nv">hide</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view object to add or remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hide</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><em>true</em> if you want to add the view object to the <strong>webViewsWithPasswordFields</strong> set, <em>false</em> to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Annotation"></a>
+                <a name="//apple_ref/swift/Section/Annotation" class="dashAnchor"></a>
+                <a href="#/Annotation">
+                  <h3 class="section-name">Annotation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay19disableLaserPointerSb"></a>
+                    <a name="//apple_ref/swift/Property/disableLaserPointer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay19disableLaserPointerSb">disableLaserPointer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean value that determines whether the technican can use the laser pointer feature in the technician console.</p>
+
+<p>If the value of this property is <em>false</em> (the default), the technician can use the laser pointer feature in the tech console during display streaming. Set to <em>true</em> if you want to disable the feature.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">disableLaserPointer</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10RescueCore13RescueDisplay17disableWhiteboardSb"></a>
+                    <a name="//apple_ref/swift/Property/disableWhiteboard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10RescueCore13RescueDisplay17disableWhiteboardSb">disableWhiteboard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean value that determines whether the technican can use the whiteboard feature in the technician console.</p>
+
+<p>If the value of this property is <em>false</em> (the default), the technician can use the whiteboard feature in the tech console during display streaming. Set to <em>true</em> if you want to disable the feature.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">disableWhiteboard</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC10RescueCore13RescueDisplay14sharedInstanceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC10RescueCore13RescueDisplay14sharedInstanceS0_">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueDisplay</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2017-06-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

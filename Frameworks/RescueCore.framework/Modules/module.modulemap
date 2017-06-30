@@ -1,8 +1,6 @@
 framework module RescueCore {
-  umbrella header "RescueCore.h"
-
-  export *
-  module * { export * }
+    umbrella header "RescueCore.h"
+    export *
 }
 
 module RescueCore.Swift {

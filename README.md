@@ -17,8 +17,7 @@ target 'YourAppTarget' do
   use_frameworks!
 
   pod 'RescueSDK/Core'
-  pod 'RescueSDK/DisplayStreaming'
-  pod 'RescueSDK/CameraStreaming'
+  pod 'RescueSDK/LMICoreMedia'
 end
 
 ```

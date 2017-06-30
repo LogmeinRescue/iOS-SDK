@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/teamcity/build.tc/and-macbuilder06.noclab.local-02/work/5d8d0509e0696d1e/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
+      "line": 38,
+      "symbol": "RescueChat.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/teamcity/build.tc/and-macbuilder06.noclab.local-02/work/5d8d0509e0696d1e/SDK/RescueSDK"
+}
