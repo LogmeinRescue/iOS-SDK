@@ -5,4 +5,5 @@ framework module RescueCore {
 
 module RescueCore.Swift {
     header "RescueCore-Swift.h"
+    requires objc
 }

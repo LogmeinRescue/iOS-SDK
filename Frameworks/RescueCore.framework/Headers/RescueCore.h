@@ -1,3 +1,3 @@
 #import "RSMediaLibManager.h"
-#import "RSMediaLibManagerDelegate.h"
+#import "RescueMediaDelegate.h"
 #import "RSScreenPackets.h"

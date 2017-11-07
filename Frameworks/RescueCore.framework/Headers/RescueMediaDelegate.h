@@ -42,5 +42,6 @@ typedef NS_ENUM(NSUInteger, RSCameraDevice)
 - (void)processData:(NSData * _Nonnull)data;
 - (void)globalTransformation:(CGAffineTransform) transformation;
 - (void)turnFlashlightOff;
+- (void)streamSizeDidChange;
 
 @end

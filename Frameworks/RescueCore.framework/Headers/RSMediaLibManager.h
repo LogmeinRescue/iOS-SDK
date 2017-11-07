@@ -9,7 +9,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
-#import "RSMediaLibManagerDelegate.h"
+#import "RescueMediaDelegate.h"
 
 
 /**
@@ -75,6 +75,8 @@
 - (nullable AVCaptureDevice *)getAVCaptureDevice;
 
 @property (nonatomic, strong, nullable) CALayer *renderLayer;
+
+@property (nonatomic) CGSize streamResolution;
 
 @end
 

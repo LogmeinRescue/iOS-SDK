@@ -9,7 +9,7 @@
 
 @interface RSScreenPackets : NSObject
 
-- (instancetype)initWithWidth:(NSInteger)width withHeight:(NSInteger)height widthQuality:(NSUInteger)quality;
+- (instancetype)initWithWidth:(NSInteger)width withHeight:(NSInteger)height withQuality:(NSUInteger)quality;
 - (NSData *)getInfo;
 - (NSData *)getInit;
 - (NSData *)getDelta;
