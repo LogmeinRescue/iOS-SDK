@@ -226,7 +226,7 @@ class ViewController: UIViewController, RescueSessionDelegate {
             textField.keyboardAppearance = .dark
 
             NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
-                action.isEnabled = textField.text?.characters.count == 6
+                action.isEnabled = textField.text?.count == 6
             }
         }
 
