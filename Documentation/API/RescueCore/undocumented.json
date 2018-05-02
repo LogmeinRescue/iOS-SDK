@@ -1,12 +1,19 @@
 {
   "warnings": [
     {
-      "file": "/Users/teamcity/build.tc/and-macbuilder05.noclab.local-01/work/a2e9fc9b89a3575b/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
-      "line": 38,
+      "file": "/Users/teamcity/build.tc/and-macbuilder01.noclab.local-02/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/communication/RescueSessionStartParameters.swift",
+      "line": 14,
+      "symbol": "RescueSessionStartParameters.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/teamcity/build.tc/and-macbuilder01.noclab.local-02/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
+      "line": 53,
       "symbol": "RescueChat.sharedInstance",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/teamcity/build.tc/and-macbuilder05.noclab.local-01/work/a2e9fc9b89a3575b/SDK/RescueSDK"
+  "source_directory": "/Users/teamcity/build.tc/and-macbuilder01.noclab.local-02/work/8947f4f99ebc3d4b/SDK/RescueSDK"
 }
