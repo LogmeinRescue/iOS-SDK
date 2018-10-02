@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RescueError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/RescueError" class="dashAnchor"></a>
+    <a title="RescueError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RescueBroadcast Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RescueBroadcast Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RescueError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RescueBroadcastSession.html">RescueBroadcastSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueLocalization.html">RescueLocalization</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RescueError.html">RescueError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueLocalizationStringIdentifier.html">RescueLocalizationStringIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RescueError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RescueError</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                </div>
+              </div>
+            <p>Error codes</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoPincode"></a>
+                    <a name="//apple_ref/swift/Element/noPincode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoPincode">noPincode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>missing pin code</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noPincode</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorPincodeExpired"></a>
+                    <a name="//apple_ref/swift/Element/pincodeExpired" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorPincodeExpired">pincodeExpired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the pin code has been expired</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">pincodeExpired</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoTechnicianAvailable"></a>
+                    <a name="//apple_ref/swift/Element/noTechnicianAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoTechnicianAvailable">noTechnicianAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>there are no technicians on the channel</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noTechnicianAvailable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoTechnicianLicense"></a>
+                    <a name="//apple_ref/swift/Element/noTechnicianLicense" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoTechnicianLicense">noTechnicianLicense</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the technicians on the channel are not configured for mobile support</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noTechnicianLicense</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoReply"></a>
+                    <a name="//apple_ref/swift/Element/noReply" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorNoReply">noReply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>there were no answer from the Rescue Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noReply</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorUnknownReply"></a>
+                    <a name="//apple_ref/swift/Element/unknownReply" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorUnknownReply">unknownReply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>unknown reply from the Rescue Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknownReply</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorTimeout"></a>
+                    <a name="//apple_ref/swift/Element/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorTimeout">timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>there were no answer from the Rescue Service in the given time</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timeout</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyMissing"></a>
+                    <a name="//apple_ref/swift/Element/apiKeyMissing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyMissing">apiKeyMissing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>no API key was set for the session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">apiKeyMissing</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorAppIdMissing"></a>
+                    <a name="//apple_ref/swift/Element/appIdMissing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorAppIdMissing">appIdMissing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the Rescue SDK could not access or send the bundle identifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">appIdMissing</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyDoesNotExist"></a>
+                    <a name="//apple_ref/swift/Element/apiKeyDoesNotExist" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyDoesNotExist">apiKeyDoesNotExist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given API key does not exist in the Rescue Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">apiKeyDoesNotExist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyDisabled"></a>
+                    <a name="//apple_ref/swift/Element/apiKeyDisabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyDisabled">apiKeyDisabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given API key is disabled in the Rescue Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">apiKeyDisabled</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyAndAppIdNotFromTheSameCompany"></a>
+                    <a name="//apple_ref/swift/Element/apiKeyAndAppIdNotFromTheSameCompany" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorApiKeyAndAppIdNotFromTheSameCompany">apiKeyAndAppIdNotFromTheSameCompany</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given API key is not valid with the app&rsquo;s bundle identifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">apiKeyAndAppIdNotFromTheSameCompany</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorPrivateCodeApiKeyNotFromTheSameCompany"></a>
+                    <a name="//apple_ref/swift/Element/privateCodeApiKeyNotFromTheSameCompany" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorPrivateCodeApiKeyNotFromTheSameCompany">privateCodeApiKeyNotFromTheSameCompany</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given pin code was not belong to the company with the given API key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">privateCodeApiKeyNotFromTheSameCompany</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorChannelApiKeyNotFromTheSameCompany"></a>
+                    <a name="//apple_ref/swift/Element/channelApiKeyNotFromTheSameCompany" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorChannelApiKeyNotFromTheSameCompany">channelApiKeyNotFromTheSameCompany</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given channel does not beong to the company with the given API key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">channelApiKeyNotFromTheSameCompany</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorChannelDoesNotExist"></a>
+                    <a name="//apple_ref/swift/Element/channelDoesNotExist" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorChannelDoesNotExist">channelDoesNotExist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given channel does not exists</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">channelDoesNotExist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorCompanyDoesNotExist"></a>
+                    <a name="//apple_ref/swift/Element/companyDoesNotExist" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorCompanyDoesNotExist">companyDoesNotExist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the given company does not exists</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">companyDoesNotExist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorRequest"></a>
+                    <a name="//apple_ref/swift/Element/request" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorRequest">request</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the Rescue service could not parse the request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">request</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorRequiredParameterMissing"></a>
+                    <a name="//apple_ref/swift/Element/requiredParameterMissing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorRequiredParameterMissing">requiredParameterMissing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>a required parameter is missing (e.g. channel id in a channel session)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">requiredParameterMissing</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorInvalidPincode"></a>
+                    <a name="//apple_ref/swift/Element/invalidPincode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorInvalidPincode">invalidPincode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the pin code is invalid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidPincode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorInvalidPincodeForSessionType"></a>
+                    <a name="//apple_ref/swift/Element/invalidPincodeForSessionType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorInvalidPincodeForSessionType">invalidPincodeForSessionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>the pin code was not generated for this type of session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidPincodeForSessionType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueBroadcast@E@RescueError@RescueErrorAppVersionNotSupported"></a>
+                    <a name="//apple_ref/swift/Element/appVersionNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@E@RescueError@RescueErrorAppVersionNotSupported">appVersionNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>session can&rsquo;t be initiated with current version of app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">appVersionNotSupported</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2018-10-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

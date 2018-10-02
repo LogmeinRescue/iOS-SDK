@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RescueBroadcastSession Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RescueBroadcastSession" class="dashAnchor"></a>
+    <a title="RescueBroadcastSession Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RescueBroadcast Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RescueBroadcast Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RescueBroadcastSession Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RescueBroadcastSession.html">RescueBroadcastSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RescueLocalization.html">RescueLocalization</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RescueError.html">RescueError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueLocalizationStringIdentifier.html">RescueLocalizationStringIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RescueBroadcastSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueBroadcastSession</span></code></pre>
+
+                </div>
+              </div>
+            <p>The connection between your extension and the Rescue Technician Console is represented by a <strong>RescueBroadcastSession</strong> object.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15RescueBroadcast0aB7SessionCACSS8appGroup_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(appGroup:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionCACSS8appGroup_tcfc">init(appGroup:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a newly initialized broadcast session</p>
+
+<p>Note: Using the broadcast feature the app and the extension have to communicate with eachother. The communication is working over group user defaults container. Set the app group identifier in your entitlements (both for app and extension) and here.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">appGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appGroup</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the app group identifier your app and extension use to communicate</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15RescueBroadcast0aB7SessionC07connectC0yyF"></a>
+                    <a name="//apple_ref/swift/Method/connectSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC07connectC0yyF">connectSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect a Rescue session started from the app.</p>
+
+<p>A <strong>RescueSession</strong> in the app should be initiated with <strong>connectToSessionAutomatically</strong> set to <em>false</em> and <strong>broadcastSession()</strong> should be called before trying to join the session from the extension.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15RescueBroadcast0aB7SessionC010disconnectC0yyF"></a>
+                    <a name="//apple_ref/swift/Method/disconnectSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC010disconnectC0yyF">disconnectSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disconnect the Rescue session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disconnectSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15RescueBroadcast0aB7SessionC24processVideoSampleBufferySo08CMSampleG0CF"></a>
+                    <a name="//apple_ref/swift/Method/processVideoSampleBuffer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC24processVideoSampleBufferySo08CMSampleG0CF">processVideoSampleBuffer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Process the video sample buffer.</p>
+
+<p>Pass the sample buffer to the Rescue SDK to stream the device screen to the Technician Console.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">processVideoSampleBuffer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMSampleBuffer object containing video data - a single video frame.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2018-10-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
