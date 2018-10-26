@@ -60,7 +60,7 @@
             <h1>RescueBroadcastSession</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueBroadcastSession</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueBroadcastSession</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -73,9 +73,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15RescueBroadcast0aB7SessionCACSS8appGroup_tcfc"></a>
+                    <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)initWithAppGroup:"></a>
                     <a name="//apple_ref/swift/Method/init(appGroup:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionCACSS8appGroup_tcfc">init(appGroup:)</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)initWithAppGroup:">init(appGroup:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -83,16 +83,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a newly initialized broadcast session</p>
+                        <p>Returns a newly initialized broadcast session.</p>
 
-<p>Note: Using the broadcast feature the app and the extension have to communicate with eachother. The communication is working over group user defaults container. Set the app group identifier in your entitlements (both for app and extension) and here.</p>
+<p>Note: To use the broadcast feature the app and the extension have to communicate with eachother. The communication is working over group user defaults container. Set the app group identifier in your entitlements (both for app and extension) and here.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">appGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">appGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -121,9 +122,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15RescueBroadcast0aB7SessionC07connectC0yyF"></a>
+                    <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)connectSession"></a>
                     <a name="//apple_ref/swift/Method/connectSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC07connectC0yyF">connectSession()</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)connectSession">connectSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -133,14 +134,15 @@
                       <div class="abstract">
                         <p>Connect a Rescue session started from the app.</p>
 
-<p>A <strong>RescueSession</strong> in the app should be initiated with <strong>connectToSessionAutomatically</strong> set to <em>false</em> and <strong>broadcastSession()</strong> should be called before trying to join the session from the extension.</p>
+<p>Note: A <strong>RescueSession</strong> in the app should be initiated with <strong>connectToSessionAutomatically</strong> set to <em>false</em> and <strong>broadcastSession()</strong> should be called before trying to join the session from the extension.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectSession</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectSession</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -150,9 +152,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15RescueBroadcast0aB7SessionC010disconnectC0yyF"></a>
+                    <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)disconnectSession"></a>
                     <a name="//apple_ref/swift/Method/disconnectSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC010disconnectC0yyF">disconnectSession()</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)disconnectSession">disconnectSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,7 +169,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disconnectSession</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disconnectSession</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -177,9 +180,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15RescueBroadcast0aB7SessionC24processVideoSampleBufferySo08CMSampleG0CF"></a>
+                    <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)processVideoSampleBuffer:"></a>
                     <a name="//apple_ref/swift/Method/processVideoSampleBuffer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC24processVideoSampleBufferySo08CMSampleG0CF">processVideoSampleBuffer(_:)</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)processVideoSampleBuffer:">processVideoSampleBuffer(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -196,7 +199,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">processVideoSampleBuffer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">processVideoSampleBuffer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -227,7 +231,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2018-10-02)</p>
+          <p>&copy; 2018 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2018-10-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

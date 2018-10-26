@@ -7,6 +7,8 @@
 
 import UIKit
 import RescueCore
+import UserNotifications
+import ReplayKit
 
 class ViewController: UIViewController {
 
@@ -16,8 +18,13 @@ class ViewController: UIViewController {
     /// Session status label
     @IBOutlet weak var statusLabel: UILabel!
 
+    @IBOutlet weak var broadcastPicker: RPSystemBroadcastPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert]){ (granted, error) in }
 
         // You can use this function to set default values for session start parameters
         setDefaultValues()
@@ -33,6 +40,8 @@ class ViewController: UIViewController {
         
         // Set the app group identifier. Use the same app group identifier for the app and extension. Also enable app groups for the app and the extension in the target's setting's capabilities tab. It is important to use the same identifier in every place.
         RescueSession.sharedInstance.appGroup = "group.com.logmein.rescue"
+        
+        broadcastPicker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
     }
 
     /// Set default values for session start parameters.
@@ -109,7 +118,7 @@ class ViewController: UIViewController {
             textField.keyboardType = .numberPad
             textField.keyboardAppearance = .dark
             
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+            NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: textField, queue: OperationQueue.main) { (notification) in
                 action.isEnabled = textField.text?.count == 6
             }
         }
@@ -180,45 +189,73 @@ class ViewController: UIViewController {
         present(alertController, animated: true) {}
     }
     
+    @IBAction func apiKeyButtonPressed()
+    {
+        let alertController = UIAlertController(title: "API key", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            if let apiKey = alertController.textFields![0].text {
+                RescueSession.sharedInstance.apiKey = apiKey
+                UserDefaults.standard.set(apiKey, forKey: "apiKey")
+            }
+        })
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "API key"
+            if let apiKey = UserDefaults.standard.object(forKey: "apiKey") as? String {
+                textField.text = apiKey
+                textField.keyboardAppearance = .dark
+            }
+        }
+        
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction())
+        
+        present(alertController, animated: true) {}
+    }
+    
     func cancelAction() -> UIAlertAction {
         return UIAlertAction(title: "Cancel", style: .cancel) { _ in }
     }
 }
 
+
 extension ViewController: RescueSessionDelegate {
     
     func rescueSessionStatusDidChange(_ status: RescueSessionStatus) {
         print("status \(status.rawValue)")
-        
+
+        // Hide the system screen share button
+        broadcastPicker.isHidden = true
+
         // set the title for the status label based of the session status
         switch status {
         case .connected:
             statusLabel.text = "Connected"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .connecting:
             statusLabel.text = "Connecting"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .connectionLost:
             statusLabel.text = "Connection lost"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .disconnected:
             statusLabel.text = "Disconnected"
-            connectButton.setTitle("Connect", for: UIControlState())
+            connectButton.setTitle("Connect", for: UIControl.State())
         case .disconnecting:
             statusLabel.text = "Disconnecting"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .onHold:
             statusLabel.text = "On hold"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .transferred:
             statusLabel.text = "Transfering"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .waitingForTechnician:
             statusLabel.text = "Waiting for technician"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         default:
             statusLabel.text = "Idle"
-            connectButton.setTitle("Connect", for: UIControlState())
+            connectButton.setTitle("Connect", for: UIControl.State())
         }
     }
     
@@ -229,9 +266,11 @@ extension ViewController: RescueSessionDelegate {
     // Get notification from the SDK about the session
     func rescueSessionReady() {
         statusLabel.text = "Session Ready"
-        connectButton.setTitle("Disconnect", for: UIControlState())
+        connectButton.setTitle("Disconnect", for: UIControl.State())
         // Tell the SDK that the app will not conect to the session, we want to connect later from the extension
         RescueSession.sharedInstance.broadcastSession()
+        // Show the system screen share button
+        broadcastPicker.isHidden = false
     }
 
 

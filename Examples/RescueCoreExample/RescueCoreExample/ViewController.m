@@ -6,6 +6,7 @@
 //
 
 
+#import <UserNotifications/UserNotifications.h>
 #import "ViewController.h"
 
 
@@ -28,8 +29,8 @@
     [super viewDidLoad];
 
     // get permission to show notification for the user about chat messages while in background
-    UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert categories:nil];
-    [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+    [center requestAuthorizationWithOptions:UNAuthorizationOptionAlert completionHandler:^(BOOL granted, NSError * _Nullable error) { }];
 
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateStyle = NSDateFormatterNoStyle;
