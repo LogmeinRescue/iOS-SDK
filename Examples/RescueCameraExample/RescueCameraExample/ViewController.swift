@@ -88,31 +88,31 @@ class ViewController: UIViewController, RescueSessionDelegate {
         switch status {
         case .connected:
             statusLabel.text = "Connected"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .connecting:
             statusLabel.text = "Connecting"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .connectionLost:
             statusLabel.text = "Connection lost"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .disconnected:
             statusLabel.text = "Disconnected"
-            connectButton.setTitle("Connect", for: UIControlState())
+            connectButton.setTitle("Connect", for: UIControl.State())
         case .disconnecting:
             statusLabel.text = "Disconnecting"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .onHold:
             statusLabel.text = "On hold"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .transferred:
             statusLabel.text = "Transfering"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         case .waitingForTechnician:
             statusLabel.text = "Waiting for technician"
-            connectButton.setTitle("Disconnect", for: UIControlState())
+            connectButton.setTitle("Disconnect", for: UIControl.State())
         default:
             statusLabel.text = "Idle"
-            connectButton.setTitle("Connect", for: UIControlState())
+            connectButton.setTitle("Connect", for: UIControl.State())
         }
     }
     
@@ -225,7 +225,7 @@ class ViewController: UIViewController, RescueSessionDelegate {
             textField.keyboardType = .numberPad
             textField.keyboardAppearance = .dark
 
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+            NotificationCenter.default.addObserver(forName: UITextField.textDidChangeNotification, object: textField, queue: OperationQueue.main) { (notification) in
                 action.isEnabled = textField.text?.count == 6
             }
         }
