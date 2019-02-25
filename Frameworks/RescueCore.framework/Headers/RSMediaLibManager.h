@@ -2,12 +2,13 @@
 //  RSMediaLibManager.h
 //  RescueSDK
 //
-//  Copyright (c) 2003-2015 LogMeIn Inc. All rights reserved.
+//  Copyright © 2003-2019 LogMeIn Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <SystemConfiguration/SystemConfiguration.h>
+#import <CoreVideo/CoreVideo.h>
 
 #import "RescueMediaDelegate.h"
 
@@ -72,11 +73,13 @@
 
 - (void)mediaMessage:(nonnull NSString *)message;
 - (void)dataChannelMessage:(nonnull NSData *)message;
-- (nullable AVCaptureDevice *)getAVCaptureDevice;
 
 @property (nonatomic, strong, nullable) CALayer *renderLayer;
 
 @property (nonatomic) CGSize streamResolution;
+
+- (void)onFrame:(nonnull CVImageBufferRef)buffer;
+- (void)sendStoredMessages;
 
 @end
 
