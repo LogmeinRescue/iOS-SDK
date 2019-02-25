@@ -2,8 +2,7 @@
 //  RSMediaLibManagerDelegate.h
 //  RescueSDK
 //
-//  Created by tkristofcsik on 28/04/16.
-//  Copyright © 2016 tkristofcsik. All rights reserved.
+//  Copyright © 2003-2019 LogMeIn Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
