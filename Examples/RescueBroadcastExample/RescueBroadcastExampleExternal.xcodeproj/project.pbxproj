@@ -71,7 +71,7 @@
 		DBE879362158F5F400476745 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		DBE879392158F5F400476745 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		DBE8793B2158F5F400476745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBE879432158F64800476745 /* RescueBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RescueBroadcast.framework; path = ../../../../../../../../Develope/Frameworks/RescueBroadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE879432158F64800476745 /* RescueBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RescueBroadcast.framework; path = ../../Frameworks/RescueBroadcast.framework; sourceTree = "<group>"; };
 		DBE879472158F6EE00476745 /* RescueBroadcastExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RescueBroadcastExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
