@@ -41,6 +41,9 @@ class ViewController: UIViewController {
         // Set the app group identifier. Use the same app group identifier for the app and extension. Also enable app groups for the app and the extension in the target's setting's capabilities tab. It is important to use the same identifier in every place.
         RescueSession.sharedInstance.appGroup = "group.com.logmein.rescue"
         
+        broadcastPicker.isHidden = true
+        broadcastPicker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
+        
     }
 
     /// Set default values for session start parameters.
