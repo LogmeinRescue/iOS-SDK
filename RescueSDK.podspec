@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RescueSDK"
-  s.version      = "5.2-beta1"
+  s.version      = "5.2"
   s.summary      = "LogMeIn Rescue SDK for iOS."
   s.description  = <<-DESC
   The Rescue In-App Support iOS SDK allows your customers to establish a Rescue support session within your app.  
@@ -8,10 +8,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.logmeinrescue.com/"
   s.license      = { :type => 'Custom', :file => 'LICENSE' }
   s.author       = "LogMeIn Inc."
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/LogmeinRescue/iOS-SDK.git", :tag => s.version.to_s }
-  s.documentation_url = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
   s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES" }
+  s.documentation_url    = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
+  s.platform      = :ios, "11.0"
 
   s.default_subspec = "Core"
 
@@ -27,4 +28,5 @@ Pod::Spec.new do |s|
   s.subspec 'Broadcast' do |broadcast|
     broadcast.vendored_frameworks = "Frameworks/RescueBroadcast.framework"
   end
+
 end
