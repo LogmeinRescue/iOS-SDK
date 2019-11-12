@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RescueSDK"
-  s.version      = "5.2"
+  s.version      = "5.3"
   s.summary      = "LogMeIn Rescue SDK for iOS."
   s.description  = <<-DESC
   The Rescue In-App Support iOS SDK allows your customers to establish a Rescue support session within your app.  
