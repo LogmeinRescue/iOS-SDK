@@ -404,7 +404,7 @@ typedef SWIFT_ENUM(NSUInteger, RescueChatMessageType, closed) {
 
 @protocol RescueDisplayDelegate;
 enum RescueDisplayMode : NSUInteger;
-@class UIWebView;
+@class WKWebView;
 
 /// The <em>RescueDisplay</em> class provides methods and properties to manage display streaming functionality of the Rescue SDK.
 SWIFT_CLASS("_TtC10RescueCore13RescueDisplay")
@@ -439,15 +439,9 @@ SWIFT_CLASS("_TtC10RescueCore13RescueDisplay")
 /// \param hide <em>true</em> if you want to add the view object to the <em>hiddenViews</em> set, <em>false</em> to remove.
 ///
 - (void)setView:(UIView * _Nonnull)view hidden:(BOOL)hide;
-/// Set of web view objects which password fields should be hidden from the technican.
-/// Focused password fields will be hidden in these web views during screen sharing. Keyboard will be also hidden when a password field get focus in these web views.
-@property (nonatomic, copy) NSSet<UIWebView *> * _Nonnull webViewsWithPasswordFields;
-/// Add or remove web view object from the <em>webViewsWithPasswordFields</em> set.
-/// \param view The view object to add or remove.
-///
-/// \param hide <em>true</em> if you want to add the view object to the <em>webViewsWithPasswordFields</em> set, <em>false</em> to remove.
-///
-- (void)setWebViewWithPasswordFields:(UIWebView * _Nonnull)view hidden:(BOOL)hide;
+/// A web view object which password fields should be hidden from the technican.
+/// Focused password fields will be hidden in this web view during screen sharing. Keyboard will be also hidden when a password field get focus in these web views.
+@property (nonatomic, strong) WKWebView * _Nullable webViewWithPasswordFields;
 /// A Boolean value that determines whether the technican can use the laser pointer feature in the technician console.
 /// If the value of this property is <em>false</em> (the default), the technician can use the laser pointer feature in the tech console during display streaming. Set to <em>true</em> if you want to disable the feature.
 @property (nonatomic) BOOL disableLaserPointer;

@@ -43,4 +43,7 @@ typedef NS_ENUM(NSUInteger, RSCameraDevice)
 - (void)turnFlashlightOff;
 - (void)streamSizeDidChange;
 
+- (void)stopLocalStreamRendering;
+- (void)startLocalStreamRendering;
+
 @end
