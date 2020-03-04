@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,8 @@
 		756D9F9F1EC209550016DE6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D9F9D1EC209550016DE6C /* ViewController.m */; };
 		756D9FA21EC209630016DE6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 756D9FA01EC209630016DE6C /* LaunchScreen.xib */; };
 		756D9FA41EC209750016DE6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756D9FA31EC209750016DE6C /* Images.xcassets */; };
-		756D9FB41EC310AE0016DE6C /* RescueCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756D9FB21EC310A40016DE6C /* RescueCore.framework */; };
-		756D9FB51EC310AE0016DE6C /* RescueCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756D9FB21EC310A40016DE6C /* RescueCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF5545C2383E01400B787C9 /* RescueCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF5545B2383E01400B787C9 /* RescueCore.xcframework */; };
+		DBF5545D2383E06800B787C9 /* RescueCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF5545B2383E01400B787C9 /* RescueCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				756D9FB51EC310AE0016DE6C /* RescueCore.framework in Embed Frameworks */,
+				DBF5545D2383E06800B787C9 /* RescueCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 		756D9FA31EC209750016DE6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		756D9FAA1EC3020D0016DE6C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		756D9FAB1EC3020D0016DE6C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		756D9FB21EC310A40016DE6C /* RescueCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RescueCore.framework; path = ../../Frameworks/RescueCore.framework; sourceTree = "<group>"; };
+		DBF5545B2383E01400B787C9 /* RescueCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RescueCore.xcframework; path = ../../Frameworks/RescueCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756D9FB41EC310AE0016DE6C /* RescueCore.framework in Frameworks */,
+				DBF5545C2383E01400B787C9 /* RescueCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 		756D9FB11EC310A40016DE6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				756D9FB21EC310A40016DE6C /* RescueCore.framework */,
+				DBF5545B2383E01400B787C9 /* RescueCore.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,7 +320,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCoreExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCoreExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -334,7 +337,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCoreExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCoreExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

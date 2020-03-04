@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,10 @@
 		756D9FCA1EC3206B0016DE6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756D9FC81EC3206B0016DE6C /* Main.storyboard */; };
 		756D9FCC1EC3206B0016DE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756D9FCB1EC3206B0016DE6C /* Assets.xcassets */; };
 		756D9FCF1EC3206B0016DE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756D9FCD1EC3206B0016DE6C /* LaunchScreen.storyboard */; };
-		756DA0181EC348790016DE6C /* RescueCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756DA0171EC348790016DE6C /* RescueCore.framework */; };
-		756DA0191EC348790016DE6C /* RescueCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756DA0171EC348790016DE6C /* RescueCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DB9ACC301ECEDF3C006B7298 /* LMICoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9ACC2F1ECEDF2C006B7298 /* LMICoreMedia.framework */; };
-		DB9ACC311ECEDF3C006B7298 /* LMICoreMedia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB9ACC2F1ECEDF2C006B7298 /* LMICoreMedia.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB3B658823841D580040CF2D /* LMICoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B658623841D4F0040CF2D /* LMICoreMedia.framework */; };
+		DB3B658923841D580040CF2D /* LMICoreMedia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB3B658623841D4F0040CF2D /* LMICoreMedia.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF554632383E51B00B787C9 /* RescueCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554612383E50000B787C9 /* RescueCore.xcframework */; };
+		DBF554642383E51B00B787C9 /* RescueCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554612383E50000B787C9 /* RescueCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +25,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				756DA0191EC348790016DE6C /* RescueCore.framework in Embed Frameworks */,
-				DB9ACC311ECEDF3C006B7298 /* LMICoreMedia.framework in Embed Frameworks */,
+				DBF554642383E51B00B787C9 /* RescueCore.xcframework in Embed Frameworks */,
+				DB3B658923841D580040CF2D /* LMICoreMedia.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,8 +42,8 @@
 		756D9FCE1EC3206B0016DE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		756D9FD01EC3206B0016DE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		756D9FE41EC321AA0016DE6C /* RescueCameraExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RescueCameraExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		756DA0171EC348790016DE6C /* RescueCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RescueCore.framework; path = ../../Frameworks/RescueCore.framework; sourceTree = "<group>"; };
-		DB9ACC2F1ECEDF2C006B7298 /* LMICoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LMICoreMedia.framework; path = ../../Frameworks/LMICoreMedia.framework; sourceTree = "<group>"; };
+		DB3B658623841D4F0040CF2D /* LMICoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LMICoreMedia.framework; sourceTree = "<group>"; };
+		DBF554612383E50000B787C9 /* RescueCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RescueCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756DA0181EC348790016DE6C /* RescueCore.framework in Frameworks */,
-				DB9ACC301ECEDF3C006B7298 /* LMICoreMedia.framework in Frameworks */,
+				DBF554632383E51B00B787C9 /* RescueCore.xcframework in Frameworks */,
+				DB3B658823841D580040CF2D /* LMICoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +62,7 @@
 		756D9FB81EC3206B0016DE6C = {
 			isa = PBXGroup;
 			children = (
-				DB9ACC2F1ECEDF2C006B7298 /* LMICoreMedia.framework */,
-				756DA0171EC348790016DE6C /* RescueCore.framework */,
+				DBF554602383E4E200B787C9 /* Frameworks */,
 				756D9FC31EC3206B0016DE6C /* RescueCameraExample */,
 				756D9FC21EC3206B0016DE6C /* Products */,
 			);
@@ -91,6 +90,16 @@
 			path = RescueCameraExample;
 			sourceTree = "<group>";
 		};
+		DBF554602383E4E200B787C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB3B658623841D4F0040CF2D /* LMICoreMedia.framework */,
+				DBF554612383E50000B787C9 /* RescueCore.xcframework */,
+			);
+			name = Frameworks;
+			path = ../../Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,7 +111,6 @@
 				756D9FBE1EC3206B0016DE6C /* Frameworks */,
 				756D9FBF1EC3206B0016DE6C /* Resources */,
 				756D9FE81EC33D140016DE6C /* Embed Frameworks */,
-				756150CE1EE5AC900057730E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -160,22 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		756150CE1EE5AC900057730E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/RescueCore.framework/strip-frameworks.sh\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		756D9FBD1EC3206B0016DE6C /* Sources */ = {
@@ -303,7 +295,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -317,8 +310,11 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -330,8 +326,11 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

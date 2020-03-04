@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RescueSDK"
-  s.version      = "5.4"
+  s.version      = "5.5"
   s.summary      = "LogMeIn Rescue SDK for iOS."
   s.description  = <<-DESC
   The Rescue In-App Support iOS SDK allows your customers to establish a Rescue support session within your app.  
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
 
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = "Frameworks/RescueCore.framework"
+    core.vendored_frameworks = "Frameworks/RescueCore.xcframework"
   end
 
   s.subspec 'LMICoreMedia' do |core_media|
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Broadcast' do |broadcast|
-    broadcast.vendored_frameworks = "Frameworks/RescueBroadcast.framework"
+    broadcast.vendored_frameworks = "Frameworks/RescueBroadcast.xcframework"
   end
 
 end

@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB9B013121636A91006A2CA7 /* RescueCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9B0130216369E3006A2CA7 /* RescueCore.framework */; };
-		DB9B013221636AB0006A2CA7 /* RescueCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB9B0130216369E3006A2CA7 /* RescueCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DBE879152158BF2900476745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE879142158BF2900476745 /* AppDelegate.swift */; };
 		DBE879172158BF2900476745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE879162158BF2900476745 /* ViewController.swift */; };
 		DBE8791A2158BF2900476745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE879182158BF2900476745 /* Main.storyboard */; };
@@ -17,8 +15,10 @@
 		DBE879372158F5F400476745 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE879362158F5F400476745 /* ReplayKit.framework */; };
 		DBE8793A2158F5F400476745 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE879392158F5F400476745 /* SampleHandler.swift */; };
 		DBE8793E2158F5F400476745 /* RescueBroadcastExampleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DBE879342158F5F400476745 /* RescueBroadcastExampleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DBE879442158F64800476745 /* RescueBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE879432158F64800476745 /* RescueBroadcast.framework */; };
-		DBE879462158F65C00476745 /* RescueBroadcast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBE879432158F64800476745 /* RescueBroadcast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF554692383E70A00B787C9 /* RescueBroadcast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554652383E70200B787C9 /* RescueBroadcast.xcframework */; };
+		DBF5546A2383E70A00B787C9 /* RescueBroadcast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554652383E70200B787C9 /* RescueBroadcast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DBF5546B2383E70D00B787C9 /* RescueCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554662383E70200B787C9 /* RescueCore.xcframework */; };
+		DBF5546C2383E70D00B787C9 /* RescueCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554662383E70200B787C9 /* RescueCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DBE879462158F65C00476745 /* RescueBroadcast.framework in Embed Frameworks */,
-				DB9B013221636AB0006A2CA7 /* RescueCore.framework in Embed Frameworks */,
+				DBF5546A2383E70A00B787C9 /* RescueBroadcast.xcframework in Embed Frameworks */,
+				DBF5546C2383E70D00B787C9 /* RescueCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DB9B0130216369E3006A2CA7 /* RescueCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RescueCore.framework; path = ../../Frameworks/RescueCore.framework; sourceTree = "<group>"; };
 		DBB059F42158F82A00999B7D /* RescueBroadcastExampleExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RescueBroadcastExampleExtension.entitlements; sourceTree = "<group>"; };
 		DBE879112158BF2900476745 /* RescueBroadcastExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RescueBroadcastExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE879142158BF2900476745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +70,9 @@
 		DBE879362158F5F400476745 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		DBE879392158F5F400476745 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		DBE8793B2158F5F400476745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBE879432158F64800476745 /* RescueBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RescueBroadcast.framework; path = ../../Frameworks/RescueBroadcast.framework; sourceTree = "<group>"; };
 		DBE879472158F6EE00476745 /* RescueBroadcastExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RescueBroadcastExample.entitlements; sourceTree = "<group>"; };
+		DBF554652383E70200B787C9 /* RescueBroadcast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RescueBroadcast.xcframework; path = ../../Frameworks/RescueBroadcast.xcframework; sourceTree = "<group>"; };
+		DBF554662383E70200B787C9 /* RescueCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RescueCore.xcframework; path = ../../Frameworks/RescueCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9B013121636A91006A2CA7 /* RescueCore.framework in Frameworks */,
+				DBF554692383E70A00B787C9 /* RescueBroadcast.xcframework in Frameworks */,
+				DBF5546B2383E70D00B787C9 /* RescueCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBE879442158F64800476745 /* RescueBroadcast.framework in Frameworks */,
 				DBE879372158F5F400476745 /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,8 +132,8 @@
 		DBE879352158F5F400476745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB9B0130216369E3006A2CA7 /* RescueCore.framework */,
-				DBE879432158F64800476745 /* RescueBroadcast.framework */,
+				DBF554652383E70200B787C9 /* RescueBroadcast.xcframework */,
+				DBF554662383E70200B787C9 /* RescueCore.xcframework */,
 				DBE879362158F5F400476745 /* ReplayKit.framework */,
 			);
 			name = Frameworks;

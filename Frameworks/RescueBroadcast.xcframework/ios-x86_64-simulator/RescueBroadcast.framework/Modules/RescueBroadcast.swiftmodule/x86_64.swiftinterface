@@ -1,0 +1,98 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RescueBroadcast
+import SystemConfiguration.CaptiveNetwork
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import CoreTelephony
+import Darwin
+import Foundation
+import ReplayKit
+@_exported import RescueBroadcast
+import Swift
+import SystemConfiguration
+import UIKit
+@objc public enum RescueSessionStatus : Swift.UInt {
+  case idle
+  case connecting
+  case connected
+  case onHold
+  case transferred
+  case disconnecting
+  case disconnected
+  case waitingForTechnician
+  case connectionLost
+  public typealias RawValue = Swift.UInt
+  public init?(rawValue: Swift.UInt)
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+@objc public enum RescueLocalizationStringIdentifier : Swift.UInt {
+  case statusConnecting
+  case statusWaitingForTechnician
+  case statusDisconnecting
+  case statusDisconnected
+  case statusStreamStarting
+  case statusOnHold
+  case statusTransferring
+  case statusConnectionLost
+  public typealias RawValue = Swift.UInt
+  public init?(rawValue: Swift.UInt)
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+@objc public class RescueLocalization : ObjectiveC.NSObject {
+  @objc public class func localizedString(for identifier: RescueBroadcast.RescueLocalizationStringIdentifier) -> Swift.String
+  @objc public class func errorTitle() -> Swift.String
+  @objc public class func errorMessage(forError error: RescueBroadcast.RescueError) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum RescueError : Swift.UInt {
+  case noPincode = 1
+  case pincodeExpired
+  case noTechnicianAvailable
+  case noTechnicianLicense
+  case noReply
+  case unknownReply
+  case timeout
+  case apiKeyMissing
+  case appIdMissing
+  case apiKeyDoesNotExist
+  case apiKeyDisabled
+  case apiKeyAndAppIdNotFromTheSameCompany
+  case privateCodeApiKeyNotFromTheSameCompany
+  case channelApiKeyNotFromTheSameCompany
+  case channelDoesNotExist
+  case companyDoesNotExist
+  case request
+  case requiredParameterMissing
+  case invalidPincode
+  case invalidPincodeForSessionType
+  case appVersionNotSupported
+  public typealias RawValue = Swift.UInt
+  public init?(rawValue: Swift.UInt)
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+@objc public class RescueBroadcastSession : ObjectiveC.NSObject {
+  @objc public init(appGroup: Swift.String)
+  @objc public func connectSession()
+  @objc public func disconnectSession()
+  @objc public func processVideoSampleBuffer(_ sampleBuffer: CoreMedia.CMSampleBuffer)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension RescueBroadcast.RescueSessionStatus : Swift.Equatable {}
+extension RescueBroadcast.RescueSessionStatus : Swift.Hashable {}
+extension RescueBroadcast.RescueSessionStatus : Swift.RawRepresentable {}
+extension RescueBroadcast.RescueLocalizationStringIdentifier : Swift.Equatable {}
+extension RescueBroadcast.RescueLocalizationStringIdentifier : Swift.Hashable {}
+extension RescueBroadcast.RescueLocalizationStringIdentifier : Swift.RawRepresentable {}
+extension RescueBroadcast.RescueError : Swift.Equatable {}
+extension RescueBroadcast.RescueError : Swift.Hashable {}
+extension RescueBroadcast.RescueError : Swift.RawRepresentable {}
