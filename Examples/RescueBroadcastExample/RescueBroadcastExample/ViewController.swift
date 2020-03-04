@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     /// Session status label
     @IBOutlet weak var statusLabel: UILabel!
 
-    @IBOutlet weak var broadcastPicker: RPSystemBroadcastPickerView!
+    @IBOutlet weak var broadcastPickerContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +41,29 @@ class ViewController: UIViewController {
         // Set the app group identifier. Use the same app group identifier for the app and extension. Also enable app groups for the app and the extension in the target's setting's capabilities tab. It is important to use the same identifier in every place.
         RescueSession.sharedInstance.appGroup = "group.com.logmein.rescue"
         
-        broadcastPicker.isHidden = true
-        broadcastPicker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
-        
+        broadcastPickerContainer.isHidden = true
+        addBroadcastPicker()
+    }
+    
+    fileprivate func addBroadcastPicker() {
+        // RPSystemBroadcastPickerView has issues:
+        // on iOS 12 before 12.2 the preferredExtensionfunction does not work properly
+        // on iOS 13 before 13.1 app crashes when user presses button
+        if #available(iOS 12.2, *) {
+            var broadcastPickerAvailable = true
+            if #available(iOS 13, *) {
+                broadcastPickerAvailable = false
+                if #available(iOS 13.1, *) {
+                    broadcastPickerAvailable = true
+                }
+            }
+            guard broadcastPickerAvailable else { return }
+            let frame = CGRect(x: 0, y: 0, width: broadcastPickerContainer.bounds.width, height: broadcastPickerContainer.bounds.height)
+            let picker = RPSystemBroadcastPickerView(frame: frame)
+            broadcastPickerContainer.addSubview(picker)
+            picker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
+            picker.showsMicrophoneButton = false
+        }
     }
 
     /// Set default values for session start parameters.
@@ -227,7 +247,7 @@ extension ViewController: RescueSessionDelegate {
         print("status \(status.rawValue)")
 
         // Hide the system screen share button
-        broadcastPicker.isHidden = true
+        broadcastPickerContainer.isHidden = true
 
         // set the title for the status label based of the session status
         switch status {
@@ -272,7 +292,7 @@ extension ViewController: RescueSessionDelegate {
         // Tell the SDK that the app will not conect to the session, we want to connect later from the extension
         RescueSession.sharedInstance.broadcastSession()
         // Show the system screen share button
-        broadcastPicker.isHidden = false
+        broadcastPickerContainer.isHidden = false
     }
 
 

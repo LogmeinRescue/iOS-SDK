@@ -14,7 +14,7 @@
     <a title="RescueSession Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (0% documented)</p>
+        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -105,6 +105,12 @@
         <section>
           <section class="section">
             <h1>RescueSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueSession</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
             <p>The connection between your application and the Rescue Technician Console is represented by a <strong>RescueSession</strong> object. This is a singleton object you access it by calling the <strong>sharedInstance</strong> class method.</p>
 
           </section>
@@ -113,17 +119,19 @@
               <div class="task-name-container">
                 <a name="/Configure%20session"></a>
                 <a name="//apple_ref/swift/Section/Configure session" class="dashAnchor"></a>
-                <a href="#/Configure%20session">
-                  <h3 class="section-name">Configure session</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configure%20session"></a>
+                  <h3 class="section-name"><p>Configure session</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)apiKey"></a>
                     <a name="//apple_ref/swift/Property/apiKey" class="dashAnchor"></a>
-                    <a class="token" href="#/">apiKey</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)apiKey">apiKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -136,15 +144,24 @@
 <p>Every app need an API key. Starting a Rescue session will always fail without it.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)appGroup"></a>
                     <a name="//apple_ref/swift/Property/appGroup" class="dashAnchor"></a>
-                    <a class="token" href="#/">appGroup</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)appGroup">appGroup</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -157,15 +174,24 @@
 <p>Using the broadcast feature the app and the extension have to communicate with eachother. The communication is working over group user defaults container. Set the app group identifier in your entitlements (both for app and extension) and here.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">appGroup</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)delegate"></a>
                     <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/">delegate</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)delegate">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,15 +202,24 @@
                         <p>The object that acts as the delegate of <strong>RescueSession</strong>.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RescueSessionDelegate.html">RescueSessionDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)connectToSessionAutomatically"></a>
                     <a name="//apple_ref/swift/Property/connectToSessionAutomatically" class="dashAnchor"></a>
-                    <a class="token" href="#/">connectToSessionAutomatically</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)connectToSessionAutomatically">connectToSessionAutomatically</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -195,15 +230,24 @@
                         <p>Pass this parameter along with session start.The SDK will automatically join the session if it is <em>true</em>. If it is set to <em>false</em> the SDK will notify the <strong>RescueSessionDelegate</strong>, that the session is ready with <strong>rescueSessionReady()</strong>. After  the session ready call, you can call <strong>connectSession()</strong> on the <strong>RescueSession</strong> to connect he session; or you can connect to the sesion from your broadcast extension.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">connectToSessionAutomatically</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStartParameters"></a>
                     <a name="//apple_ref/swift/Property/sessionStartParameters" class="dashAnchor"></a>
-                    <a class="token" href="#/">sessionStartParameters</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStartParameters">sessionStartParameters</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,6 +260,15 @@
 <p>Automatically created, call its methods to configure it.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">sessionStartParameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a></span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -225,17 +278,19 @@
               <div class="task-name-container">
                 <a name="/Session%20information"></a>
                 <a name="//apple_ref/swift/Section/Session information" class="dashAnchor"></a>
-                <a href="#/Session%20information">
-                  <h3 class="section-name">Session information</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Session%20information"></a>
+                  <h3 class="section-name"><p>Session information</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStatus"></a>
                     <a name="//apple_ref/swift/Property/sessionStatus" class="dashAnchor"></a>
-                    <a class="token" href="#/">sessionStatus</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStatus">sessionStatus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -246,15 +301,24 @@
                         <p>State of the session.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">sessionStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)operatorName"></a>
                     <a name="//apple_ref/swift/Property/operatorName" class="dashAnchor"></a>
-                    <a class="token" href="#/">operatorName</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)operatorName">operatorName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -267,15 +331,24 @@
 <p>This property is KVO compliant</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">operatorName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStart"></a>
                     <a name="//apple_ref/swift/Property/sessionStart" class="dashAnchor"></a>
-                    <a class="token" href="#/">sessionStart</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)sessionStart">sessionStart</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -288,15 +361,24 @@
 <p>This property is KVO compliant</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">sessionStart</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)transmittedData"></a>
                     <a name="//apple_ref/swift/Property/transmittedData" class="dashAnchor"></a>
-                    <a class="token" href="#/">transmittedData</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)transmittedData">transmittedData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -307,15 +389,24 @@
                         <p>Transmitted data during session</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">transmittedData</span><span class="p">:</span> <span class="n">size_t</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(py)afterSessionSurveyURL"></a>
                     <a name="//apple_ref/swift/Property/afterSessionSurveyURL" class="dashAnchor"></a>
-                    <a class="token" href="#/">afterSessionSurveyURL</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(py)afterSessionSurveyURL">afterSessionSurveyURL</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -328,15 +419,24 @@
 <p>The URL can change during a support session, so only get this property after ending the support session.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">afterSessionSurveyURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:10RescueCore0A7SessionC17broadcastDelegateAA0a9BroadcastE0_pSgvp"></a>
                     <a name="//apple_ref/swift/Property/broadcastDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/">broadcastDelegate</a>
+                    <a class="token" href="#/s:10RescueCore0A7SessionC17broadcastDelegateAA0a9BroadcastE0_pSgvp">broadcastDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -344,7 +444,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">broadcastDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RescueBroadcastDelegate.html">RescueBroadcastDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -355,17 +464,19 @@
               <div class="task-name-container">
                 <a name="/Control%20session%20lifecycle"></a>
                 <a name="//apple_ref/swift/Section/Control session lifecycle" class="dashAnchor"></a>
-                <a href="#/Control%20session%20lifecycle">
-                  <h3 class="section-name">Control session lifecycle</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Control%20session%20lifecycle"></a>
+                  <h3 class="section-name"><p>Control session lifecycle</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(im)startSession"></a>
                     <a name="//apple_ref/swift/Method/startSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/">startSession()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(im)startSession">startSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -378,15 +489,24 @@
 <p>The <strong>startSession</strong> method is asynchronous, it will return immediately. You will be notified via the <strong>delegate</strong> about the outcome of the session start.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(im)connectSession"></a>
                     <a name="//apple_ref/swift/Method/connectSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/">connectSession()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(im)connectSession">connectSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -399,15 +519,24 @@
 <p>Important: If you initiated the Rescue session with <strong>connectToSessionAutomatically</strong> set to <em>false</em>, you have to manually call <strong>connectSession()</strong> or <strong>broadcastSession()</strong></p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(im)broadcastSession"></a>
                     <a name="//apple_ref/swift/Method/broadcastSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/">broadcastSession()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(im)broadcastSession">broadcastSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -420,15 +549,24 @@
 <p>Important: If you initiated the Rescue session with <strong>connectToSessionAutomatically</strong> set to <em>false</em>, you have to manually call <strong>connectSession()</strong> or <strong>broadcastSession()</strong></p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">broadcastSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(im)endSession"></a>
                     <a name="//apple_ref/swift/Method/endSession()" class="dashAnchor"></a>
-                    <a class="token" href="#/">endSession()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(im)endSession">endSession()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -441,15 +579,24 @@
 <p>The <strong>endSession</strong> method is asynchronous, it will return immediately. You will be notified via the <strong>delegate</strong> about the outcome of the session start.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">endSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(im)reset"></a>
                     <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
-                    <a class="token" href="#/">reset()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(im)reset">reset()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -460,6 +607,15 @@
                         <p>Clean up the Rescue SDK, delete every data stored by it.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -469,17 +625,19 @@
               <div class="task-name-container">
                 <a name="/Key-Value%20Observation"></a>
                 <a name="//apple_ref/swift/Section/Key-Value Observation" class="dashAnchor"></a>
-                <a href="#/Key-Value%20Observation">
-                  <h3 class="section-name">Key-Value Observation</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Key-Value%20Observation"></a>
+                  <h3 class="section-name"><p>Key-Value Observation</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@CM@RescueCore@objc(cs)RescueSession(im)observeValueForKeyPath:ofObject:change:context:"></a>
                     <a name="//apple_ref/swift/Method/observeValue(forKeyPath:of:change:context:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">observeValue(forKeyPath:of:change:context:)</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(im)observeValueForKeyPath:ofObject:change:context:">observeValue(forKeyPath:of:change:context:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -492,15 +650,23 @@
 <p>Note: It is not intended to call this method directly.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">observeValue</span><span class="p">(</span><span class="n">forKeyPath</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">of</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">change</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSKeyValueChangeKey</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@CM@RescueCore@objc(cs)RescueSession(cm)automaticallyNotifiesObserversForKey:"></a>
                     <a name="//apple_ref/swift/Method/automaticallyNotifiesObservers(forKey:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">automaticallyNotifiesObservers(forKey:)</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(cm)automaticallyNotifiesObserversForKey:">automaticallyNotifiesObservers(forKey:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -512,6 +678,14 @@
 
 <p>Note: It is not intended to call this method directly.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">automaticallyNotifiesObservers</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -522,17 +696,19 @@
               <div class="task-name-container">
                 <a name="/Singleton%20access"></a>
                 <a name="//apple_ref/swift/Section/Singleton access" class="dashAnchor"></a>
-                <a href="#/Singleton%20access">
-                  <h3 class="section-name">Singleton access</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Singleton%20access"></a>
+                  <h3 class="section-name"><p>Singleton access</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@CM@RescueCore@objc(cs)RescueSession(cpy)sharedInstance"></a>
                     <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
-                    <a class="token" href="#/">sharedInstance</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(cpy)sharedInstance">sharedInstance</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,6 +719,15 @@
                         <p>Singleton access.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueSession</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -551,8 +736,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-01-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

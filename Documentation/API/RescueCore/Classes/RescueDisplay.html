@@ -14,7 +14,7 @@
     <a title="RescueDisplay Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (0% documented)</p>
+        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -105,6 +105,12 @@
         <section>
           <section class="section">
             <h1>RescueDisplay</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueDisplay</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
             <p>The <strong>RescueDisplay</strong> class provides methods and properties to manage display streaming functionality of the Rescue SDK.</p>
 
           </section>
@@ -114,9 +120,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(im)enable"></a>
                     <a name="//apple_ref/swift/Method/enable()" class="dashAnchor"></a>
-                    <a class="token" href="#/">enable()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(im)enable">enable()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,15 +135,24 @@
 <p>If display streaming functionality is needed during the support session, call this method before starting the session.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">enable</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)delegate"></a>
                     <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/">delegate</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)delegate">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,15 +163,24 @@
                         <p>The object that acts as the delegate of <strong>RescueDisplay</strong></p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RescueDisplayDelegate.html">RescueDisplayDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)mode"></a>
                     <a name="//apple_ref/swift/Property/mode" class="dashAnchor"></a>
-                    <a class="token" href="#/">mode</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)mode">mode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -174,6 +198,15 @@
 </ul>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueDisplayMode.html">RescueDisplayMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -183,17 +216,19 @@
               <div class="task-name-container">
                 <a name="/Configure%20views"></a>
                 <a name="//apple_ref/swift/Section/Configure views" class="dashAnchor"></a>
-                <a href="#/Configure%20views">
-                  <h3 class="section-name">Configure views</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configure%20views"></a>
+                  <h3 class="section-name"><p>Configure views</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)rootView"></a>
                     <a name="//apple_ref/swift/Property/rootView" class="dashAnchor"></a>
-                    <a class="token" href="#/">rootView</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)rootView">rootView</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -208,15 +243,24 @@ If the property is not set when display streaming is initiated by the technician
 If there is still no view after this, the whole app screen will be streamed.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">rootView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)hiddenViews"></a>
                     <a name="//apple_ref/swift/Property/hiddenViews" class="dashAnchor"></a>
-                    <a class="token" href="#/">hiddenViews</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)hiddenViews">hiddenViews</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -229,15 +273,24 @@ If there is still no view after this, the whole app screen will be streamed.</p>
 <p>During capturing the display which will be streamed to the technican, the views in the set will be blacked out.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">hiddenViews</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">UIView</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(im)setView:hidden:"></a>
                     <a name="//apple_ref/swift/Method/setView(_:hidden:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">setView(_:hidden:)</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(im)setView:hidden:">setView(_:hidden:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -248,15 +301,55 @@ If there is still no view after this, the whole app screen will be streamed.</p>
                         <p>Add or remove view object from the <strong>hiddenViews</strong> set.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="n">hidden</span> <span class="nv">hide</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view object to add or remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hide</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><em>true</em> if you want to add the view object to the <strong>hiddenViews</strong> set, <em>false</em> to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)webViewWithPasswordFields"></a>
                     <a name="//apple_ref/swift/Property/webViewWithPasswordFields" class="dashAnchor"></a>
-                    <a class="token" href="#/">webViewWithPasswordFields</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)webViewWithPasswordFields">webViewWithPasswordFields</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,6 +362,15 @@ If there is still no view after this, the whole app screen will be streamed.</p>
 <p>Focused password fields will be hidden in this web view during screen sharing. Keyboard will be also hidden when a password field get focus in these web views.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">webViewWithPasswordFields</span><span class="p">:</span> <span class="kt">WKWebView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -278,17 +380,19 @@ If there is still no view after this, the whole app screen will be streamed.</p>
               <div class="task-name-container">
                 <a name="/Annotation"></a>
                 <a name="//apple_ref/swift/Section/Annotation" class="dashAnchor"></a>
-                <a href="#/Annotation">
-                  <h3 class="section-name">Annotation</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Annotation"></a>
+                  <h3 class="section-name"><p>Annotation</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)disableLaserPointer"></a>
                     <a name="//apple_ref/swift/Property/disableLaserPointer" class="dashAnchor"></a>
-                    <a class="token" href="#/">disableLaserPointer</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)disableLaserPointer">disableLaserPointer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -301,15 +405,24 @@ If there is still no view after this, the whole app screen will be streamed.</p>
 <p>If the value of this property is <em>false</em> (the default), the technician can use the laser pointer feature in the tech console during display streaming. Set to <em>true</em> if you want to disable the feature.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">disableLaserPointer</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueDisplay(py)disableWhiteboard"></a>
                     <a name="//apple_ref/swift/Property/disableWhiteboard" class="dashAnchor"></a>
-                    <a class="token" href="#/">disableWhiteboard</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueDisplay(py)disableWhiteboard">disableWhiteboard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -322,19 +435,24 @@ If there is still no view after this, the whole app screen will be streamed.</p>
 <p>If the value of this property is <em>false</em> (the default), the technician can use the whiteboard feature in the tech console during display streaming. Set to <em>true</em> if you want to disable the feature.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">disableWhiteboard</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@CM@RescueCore@objc(cs)RescueDisplay(cpy)sharedInstance"></a>
                     <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
-                    <a class="token" href="#/">sharedInstance</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueDisplay(cpy)sharedInstance">sharedInstance</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -345,6 +463,15 @@ If there is still no view after this, the whole app screen will be streamed.</p>
                         <p>Singleton access.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueDisplay</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -353,8 +480,8 @@ If there is still no view after this, the whole app screen will be streamed.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-01-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

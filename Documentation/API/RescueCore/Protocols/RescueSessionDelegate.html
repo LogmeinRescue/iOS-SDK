@@ -14,7 +14,7 @@
     <a title="RescueSessionDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (0% documented)</p>
+        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -105,6 +105,13 @@
         <section>
           <section class="section">
             <h1>RescueSessionDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RescueSessionDelegate</span></code></pre>
+
+                </div>
+              </div>
             <p>The <strong>RescueSessionDelegate</strong> protocol defines a set of methods you can use to get notified about session related events.</p>
 
           </section>
@@ -114,9 +121,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionStatusDidChange:"></a>
                     <a name="//apple_ref/swift/Method/rescueSessionStatusDidChange(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueSessionStatusDidChange(_:)</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionStatusDidChange:">rescueSessionStatusDidChange(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,15 +136,42 @@
 <p>This method is optional.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rescueSessionStatusDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueSessionStatus.html">RescueSessionStatus</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new session state.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionError:withUserInfo:"></a>
                     <a name="//apple_ref/swift/Method/rescueSessionError(_:withUserInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueSessionError(_:withUserInfo:)</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionError:withUserInfo:">rescueSessionError(_:withUserInfo:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,15 +182,54 @@
                         <p>Tells the delegate that an error occured during session.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rescueSessionError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/RescueError.html">RescueError</a></span><span class="p">,</span> <span class="n">withUserInfo</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error code.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>More info about the error. In case of <strong>errorCode</strong> <em>RescueErrorNoTechnicianAvailable</em>, the dictionary contains the URL set in the administration center if there are no technicians on the channel.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionReady"></a>
                     <a name="//apple_ref/swift/Method/rescueSessionReady()" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueSessionReady()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueSessionDelegate(im)rescueSessionReady">rescueSessionReady()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,6 +240,15 @@
                         <p>Notify the delegate that the session is ready for connecting or broadcasting</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueSessionReady</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -175,8 +257,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-01-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

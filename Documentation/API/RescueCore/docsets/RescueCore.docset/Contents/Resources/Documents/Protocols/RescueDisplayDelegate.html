@@ -14,7 +14,7 @@
     <a title="RescueDisplayDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (0% documented)</p>
+        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -105,6 +105,13 @@
         <section>
           <section class="section">
             <h1>RescueDisplayDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RescueDisplayDelegate</span></code></pre>
+
+                </div>
+              </div>
             <p>The <strong>RescueDisplayDelegate</strong> protocol defines a set of optional methods you can use to get notified about display streaming related events.</p>
 
 <p>All of the methods in this protocol are optional.</p>
@@ -116,9 +123,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayRequestViewToSendToTechnician"></a>
                     <a name="//apple_ref/swift/Method/rescueDisplayRequestViewToSendToTechnician()" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueDisplayRequestViewToSendToTechnician()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayRequestViewToSendToTechnician">rescueDisplayRequestViewToSendToTechnician()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -131,15 +138,28 @@
 <p>This method is called if <strong>RescueDisplay</strong>&lsquo;s <strong>mode</strong> is set to <em>RootView</em> but no root view was provided.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueDisplayRequestViewToSendToTechnician</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A view object from the view hierarchy to use as root view for display streaming.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayStreamingDidStart"></a>
                     <a name="//apple_ref/swift/Method/rescueDisplayStreamingDidStart()" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueDisplayStreamingDidStart()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayStreamingDidStart">rescueDisplayStreamingDidStart()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -150,15 +170,24 @@
                         <p>Tells the delegate that the display streaming has been started.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueDisplayStreamingDidStart</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayStreamingDidStop"></a>
                     <a name="//apple_ref/swift/Method/rescueDisplayStreamingDidStop()" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueDisplayStreamingDidStop()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueDisplayDelegate(im)rescueDisplayStreamingDidStop">rescueDisplayStreamingDidStop()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -169,6 +198,15 @@
                         <p>Tells the delegate that the display streaming has been stopped.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueDisplayStreamingDidStop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -177,8 +215,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-01-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

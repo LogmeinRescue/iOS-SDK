@@ -14,7 +14,7 @@
     <a title="RescueChatDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (0% documented)</p>
+        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -105,6 +105,13 @@
         <section>
           <section class="section">
             <h1>RescueChatDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RescueChatDelegate</span></code></pre>
+
+                </div>
+              </div>
             <p>The <strong>RescueChatDelegate</strong> protocol defines a set of optional methods you can use to get notified about chat related events. All of the methods in this protocol are optional.</p>
 
           </section>
@@ -114,9 +121,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatTyping"></a>
                     <a name="//apple_ref/swift/Method/rescueChatTyping()" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueChatTyping()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatTyping">rescueChatTyping()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -127,15 +134,24 @@
                         <p>Tells the delegate that the technician is typing.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueChatTyping</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatDidReceiveMessage:"></a>
                     <a name="//apple_ref/swift/Method/rescueChatDidReceiveMessage(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueChatDidReceiveMessage(_:)</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatDidReceiveMessage:">rescueChatDidReceiveMessage(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,15 +164,43 @@
 <p>Messages include chat messages from the technician, the user and the system.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueChatDidReceiveMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">chatMessage</span><span class="p">:</span> <span class="kt"><a href="../Classes/RescueChatMessage.html">RescueChatMessage</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>chatMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The chat message generated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatDidReceiveURL:"></a>
                     <a name="//apple_ref/swift/Method/rescueChatDidReceiveURL(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">rescueChatDidReceiveURL(_:)</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)rescueChatDidReceiveURL:">rescueChatDidReceiveURL(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -169,15 +213,43 @@
 <p>Messages include chat messages from the technician, the user and the system.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">rescueChatDidReceiveURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL sent by the technician.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)recueChatDidBecomeEnabled"></a>
                     <a name="//apple_ref/swift/Method/recueChatDidBecomeEnabled()" class="dashAnchor"></a>
-                    <a class="token" href="#/">recueChatDidBecomeEnabled()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)recueChatDidBecomeEnabled">recueChatDidBecomeEnabled()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -190,15 +262,24 @@
 <p>From now on the SDK can send chat messages to the technician and vice versa</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">recueChatDidBecomeEnabled</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)recueChatDidBecomeDisabled"></a>
                     <a name="//apple_ref/swift/Method/recueChatDidBecomeDisabled()" class="dashAnchor"></a>
-                    <a class="token" href="#/">recueChatDidBecomeDisabled()</a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(pl)RescueChatDelegate(im)recueChatDidBecomeDisabled">recueChatDidBecomeDisabled()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -211,6 +292,15 @@
 <p>From now on the SDK can&rsquo;t send chat messages to the technician and vice versa</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">recueChatDidBecomeDisabled</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -219,8 +309,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-01-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
