@@ -189,6 +189,10 @@ import WebKit
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @objc override dynamic public class func automaticallyNotifiesObservers(forKey key: Swift.String) -> Swift.Bool
 }
+@objc public class RescueSession : RescueCore.RescueSessionBase {
+  @objc public static var sharedInstance: RescueCore.RescueSession
+  @objc deinit
+}
 @objc public protocol RescueSessionDelegate {
   @objc func rescueSessionStatusDidChange(_ status: RescueCore.RescueSessionStatus)
   @objc func rescueSessionError(_ error: RescueCore.RescueError, withUserInfo userInfo: [Swift.String : Swift.AnyObject]?)

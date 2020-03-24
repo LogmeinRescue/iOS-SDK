@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/RescueCore-Swift.h</key>
 		<data>
-		D06F7yT5ec80gUmyXs5/+g+RM00=
+		LKI0hUS6U9b9kpCIm4iSBJf1efM=
 		</data>
 		<key>Headers/RescueCore.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hhEBduqrnFwSRycjFTm6zwmFs/4=
+		J3JJSjvcrj98KrvDWROOsPKwT2I=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GRCl0XZP+pqY4nAAafZyU75AHxg=
+		ix9Urlau1UjoZzQAe4pHYXhy3Hk=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		hhEBduqrnFwSRycjFTm6zwmFs/4=
+		J3JJSjvcrj98KrvDWROOsPKwT2I=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		GRCl0XZP+pqY4nAAafZyU75AHxg=
+		ix9Urlau1UjoZzQAe4pHYXhy3Hk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -342,7 +342,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			miP7V5q0zUzS2GtKx74/8CcrzPGkx44TxXpq0cCsh2I=
+			CXX7Y4F5afT2mw6K2dd6AgRZFp5JtCMnZk6BLsgxIx4=
 			</data>
 		</dict>
 		<key>Headers/RescueCore.h</key>
@@ -370,14 +370,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HIY+gRIMLTmngsP/nNbkyQyrgEB+BW6FZqWo08sEs5I=
+			ylxIL2a4waQpfwee7Ju7z/MuN4z8g+XyR1z1xBpsx0Y=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2aAeHeLJS8lIPChAD901TuU/sdauJ7ix0zotZLUzOzc=
+			Ql4GzbbMhgzsXlqVrKI9uVGCrxXwasOnCrb6pvua0Wc=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftdoc</key>
@@ -391,14 +391,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HIY+gRIMLTmngsP/nNbkyQyrgEB+BW6FZqWo08sEs5I=
+			ylxIL2a4waQpfwee7Ju7z/MuN4z8g+XyR1z1xBpsx0Y=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2aAeHeLJS8lIPChAD901TuU/sdauJ7ix0zotZLUzOzc=
+			Ql4GzbbMhgzsXlqVrKI9uVGCrxXwasOnCrb6pvua0Wc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

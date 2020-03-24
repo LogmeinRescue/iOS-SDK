@@ -632,6 +632,18 @@ SWIFT_CLASS("_TtC10RescueCore17RescueSessionBase")
 @end
 
 
+SWIFT_CLASS("_TtC10RescueCore13RescueSession")
+@interface RescueSession : RescueSessionBase
+/// Singleton access.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) RescueSession * _Nonnull sharedInstance;)
++ (RescueSession * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
++ (void)setSharedInstance:(RescueSession * _Nonnull)value;
+@end
+
+
+
+
+
 
 
 
