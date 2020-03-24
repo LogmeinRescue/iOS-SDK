@@ -111,6 +111,7 @@
 				756D9FBE1EC3206B0016DE6C /* Frameworks */,
 				756D9FBF1EC3206B0016DE6C /* Resources */,
 				756D9FE81EC33D140016DE6C /* Embed Frameworks */,
+				DB515B732429F2FB00A94886 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB515B732429F2FB00A94886 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/RescueCore.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		756D9FBD1EC3206B0016DE6C /* Sources */ = {
@@ -310,11 +331,11 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -326,11 +347,11 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

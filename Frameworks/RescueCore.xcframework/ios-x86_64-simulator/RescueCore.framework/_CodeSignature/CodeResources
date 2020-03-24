@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/RescueCore-Swift.h</key>
 		<data>
-		PR+v5/QM0bVr118KCBFYkhqFK60=
+		D06F7yT5ec80gUmyXs5/+g+RM00=
 		</data>
 		<key>Headers/RescueCore.h</key>
 		<data>
@@ -26,31 +26,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9x0MXo+S9A6+Yqo1J+6IaUM3b4w=
+		S946/EoGR10Mtb4OJjN4yl8+/Vs=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		quQsT0IY2XOM88HsXNPAXKqvCM8=
+		fIwDIZYjuvSqymASlFO8skqeJMc=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		V9S6D0tUbTprmeB+5zKfhEsYtQU=
+		hhEBduqrnFwSRycjFTm6zwmFs/4=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		urV0HtcWxh9NMpOOs+2OdQSdZuM=
+		GRCl0XZP+pqY4nAAafZyU75AHxg=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		quQsT0IY2XOM88HsXNPAXKqvCM8=
+		fIwDIZYjuvSqymASlFO8skqeJMc=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		V9S6D0tUbTprmeB+5zKfhEsYtQU=
+		hhEBduqrnFwSRycjFTm6zwmFs/4=
 		</data>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		urV0HtcWxh9NMpOOs+2OdQSdZuM=
+		GRCl0XZP+pqY4nAAafZyU75AHxg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -272,6 +272,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>strip-frameworks.sh</key>
+		<data>
+		l9vZtyD/fGhqCGrIdssJkhXJE0E=
+		</data>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -338,7 +342,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2iFihqNT02AyOLzPWLfH0Qs3wh79nHQM1qk/pe7MIgk=
+			miP7V5q0zUzS2GtKx74/8CcrzPGkx44TxXpq0cCsh2I=
 			</data>
 		</dict>
 		<key>Headers/RescueCore.h</key>
@@ -359,42 +363,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hDRR0vOHLDxuHQ98+Ay+e3W87ZIpu7ezhPogM8FVu9Y=
+			sQoGe4TWHiZN4I201kME9lVX+KUha/NXPH8mPvz9Q5Y=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnSF5DTAU2u3IBoouCH1fUhVtZep4VQw2Lzn81MXj/g=
+			HIY+gRIMLTmngsP/nNbkyQyrgEB+BW6FZqWo08sEs5I=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oy3mK0Ql1LiyLTEk5qfWS0v0S+gng+Vyan+fwt3OkzU=
+			2aAeHeLJS8lIPChAD901TuU/sdauJ7ix0zotZLUzOzc=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hDRR0vOHLDxuHQ98+Ay+e3W87ZIpu7ezhPogM8FVu9Y=
+			sQoGe4TWHiZN4I201kME9lVX+KUha/NXPH8mPvz9Q5Y=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnSF5DTAU2u3IBoouCH1fUhVtZep4VQw2Lzn81MXj/g=
+			HIY+gRIMLTmngsP/nNbkyQyrgEB+BW6FZqWo08sEs5I=
 			</data>
 		</dict>
 		<key>Modules/RescueCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oy3mK0Ql1LiyLTEk5qfWS0v0S+gng+Vyan+fwt3OkzU=
+			2aAeHeLJS8lIPChAD901TuU/sdauJ7ix0zotZLUzOzc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -619,6 +623,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>strip-frameworks.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gLJaw5DrbvHlh8A+R28brIpo6JBZg9ZkbeNLrJlMB3M=
+			</data>
 		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>

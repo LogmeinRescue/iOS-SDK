@@ -585,8 +585,8 @@ typedef SWIFT_ENUM(NSUInteger, RescueLocalizationStringIdentifier, open) {
 enum RescueSessionStatus : NSUInteger;
 
 /// The connection between your application and the Rescue Technician Console is represented by a <em>RescueSession</em> object. This is a singleton object you access it by calling the <em>sharedInstance</em> class method.
-SWIFT_CLASS("_TtC10RescueCore13RescueSession")
-@interface RescueSession : NSObject
+SWIFT_CLASS("_TtC10RescueCore17RescueSessionBase")
+@interface RescueSessionBase : NSObject
 /// Unique identifier for the app.
 /// Every app need an API key. Starting a Rescue session will always fail without it.
 @property (nonatomic, copy) NSString * _Nonnull apiKey;
@@ -638,7 +638,7 @@ SWIFT_CLASS("_TtC10RescueCore13RescueSession")
 
 
 
-@interface RescueSession (SWIFT_EXTENSION(RescueCore))
+@interface RescueSessionBase (SWIFT_EXTENSION(RescueCore))
 /// Key-Value Observation
 /// Note: It is not intended to call this method directly.
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
@@ -648,15 +648,6 @@ SWIFT_CLASS("_TtC10RescueCore13RescueSession")
 @end
 
 
-
-
-
-
-@interface RescueSession (SWIFT_EXTENSION(RescueCore))
-/// Singleton access.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RescueSession * _Nonnull sharedInstance;)
-+ (RescueSession * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -746,6 +737,8 @@ typedef SWIFT_ENUM(NSUInteger, RescueSessionStatus, open) {
 /// connection lost between the user and the technician, trying to reconnect
   RescueSessionStatusConnectionLost = 8,
 };
+
+
 
 
 

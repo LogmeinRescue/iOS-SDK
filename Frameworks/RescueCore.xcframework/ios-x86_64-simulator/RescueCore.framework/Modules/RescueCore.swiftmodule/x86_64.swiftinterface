@@ -189,17 +189,12 @@ import WebKit
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @objc override dynamic public class func automaticallyNotifiesObservers(forKey key: Swift.String) -> Swift.Bool
 }
-extension RescueSession {
-  @objc public static var sharedInstance: RescueCore.RescueSession {
-    @objc get
-  }
-}
 @objc public protocol RescueSessionDelegate {
   @objc func rescueSessionStatusDidChange(_ status: RescueCore.RescueSessionStatus)
   @objc func rescueSessionError(_ error: RescueCore.RescueError, withUserInfo userInfo: [Swift.String : Swift.AnyObject]?)
   @objc optional func rescueSessionReady()
 }
-@objc public class RescueSession : ObjectiveC.NSObject {
+@objc public class RescueSessionBase : ObjectiveC.NSObject {
   @objc public var apiKey: Swift.String
   @objc public var appGroup: Swift.String
   @objc weak public var delegate: RescueCore.RescueSessionDelegate?
@@ -233,7 +228,7 @@ extension RescueSession {
   @objc public func endSession()
   @objc public func reset()
 }
-extension RescueSession {
+extension RescueSessionBase {
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @objc override dynamic public class func automaticallyNotifiesObservers(forKey key: Swift.String) -> Swift.Bool
 }
