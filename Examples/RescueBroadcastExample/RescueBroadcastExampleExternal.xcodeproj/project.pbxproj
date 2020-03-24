@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB515B75242A0CB200A94886 /* RescueBroadcast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF554652383E70200B787C9 /* RescueBroadcast.xcframework */; };
 		DBE879152158BF2900476745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE879142158BF2900476745 /* AppDelegate.swift */; };
 		DBE879172158BF2900476745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE879162158BF2900476745 /* ViewController.swift */; };
 		DBE8791A2158BF2900476745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE879182158BF2900476745 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE879372158F5F400476745 /* ReplayKit.framework in Frameworks */,
+				DB515B75242A0CB200A94886 /* RescueBroadcast.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
