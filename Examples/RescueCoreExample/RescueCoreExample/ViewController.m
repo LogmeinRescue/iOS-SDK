@@ -116,6 +116,14 @@
             break;
     }
     
+    // configure additional parameters
+    [RescueSession sharedInstance].sessionStartParameters.name =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameterNameDefaultsKey];
+    [RescueSession sharedInstance].sessionStartParameters.comment1 =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameter1DefaultsKey];
+    [RescueSession sharedInstance].sessionStartParameters.comment2 =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameter2DefaultsKey];
+    [RescueSession sharedInstance].sessionStartParameters.comment3 =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameter3DefaultsKey];
+    [RescueSession sharedInstance].sessionStartParameters.comment4 =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameter4DefaultsKey];
+    [RescueSession sharedInstance].sessionStartParameters.comment5 =  [[NSUserDefaults standardUserDefaults] stringForKey:kParameter5DefaultsKey];
+
     // configure session start parameters
     switch ([[NSUserDefaults standardUserDefaults] integerForKey:kSessionStartModeDefaultsKey]) {
         case 0:

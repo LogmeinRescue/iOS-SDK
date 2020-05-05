@@ -14,7 +14,7 @@
     <a title="RescueSession Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueCore Docs</a> (98% documented)</p>
+        <p><a href="../index.html">RescueCore 5.7 Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -115,6 +115,38 @@
 
           </section>
           <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(cpy)sharedInstance"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(cpy)sharedInstance">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton access.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueSession</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Configure%20session"></a>
@@ -265,7 +297,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">sessionStartParameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">sessionStartParameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/RescueSessionStartParameters.html">RescueSessionStartParameters</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -623,6 +655,60 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/reachability"></a>
+                <a name="//apple_ref/swift/Section/reachability" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/reachability"></a>
+                  <h3 class="section-name"><p>reachability</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RescueCore@objc(cs)RescueSession(cm)shouldUseInAppBroadcastPicker"></a>
+                    <a name="//apple_ref/swift/Method/shouldUseInAppBroadcastPicker()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RescueCore@objc(cs)RescueSession(cm)shouldUseInAppBroadcastPicker">shouldUseInAppBroadcastPicker()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In certain iOS versions RPSystemBroadcastPickerView can be embedded to the app to start broadcast session easier.</p>
+
+<p>RPSystemBroadcastPickerView has known issues:</p>
+
+<ul>
+<li>on iOS 12 before 12.2 the preferredExtensionfunction does not work properly</li>
+<li>on iOS 13 before 13.1 app crashes when user presses button</li>
+</ul>
+
+<p>The function checks if the picker can be used on the iOS version running the app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">shouldUseInAppBroadcastPicker</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><strong>true</strong> if RPSystemBroadcastPickerView is available and works, otherwise <strong>false</strong>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Key-Value%20Observation"></a>
                 <a name="//apple_ref/swift/Section/Key-Value Observation" class="dashAnchor"></a>
                 <div class="section-name-container">
@@ -637,7 +723,7 @@
                     <code>
                     <a name="/c:@CM@RescueCore@objc(cs)RescueSession(im)observeValueForKeyPath:ofObject:change:context:"></a>
                     <a name="//apple_ref/swift/Method/observeValue(forKeyPath:of:change:context:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(im)observeValueForKeyPath:ofObject:change:context:">observeValue(forKeyPath:of:change:context:)</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(im)observeValueForKeyPath:ofObject:change:context:">observeValue(forKeyPath:<wbr>of:<wbr>change:<wbr>context:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -666,7 +752,7 @@
                     <code>
                     <a name="/c:@CM@RescueCore@objc(cs)RescueSession(cm)automaticallyNotifiesObserversForKey:"></a>
                     <a name="//apple_ref/swift/Method/automaticallyNotifiesObservers(forKey:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(cm)automaticallyNotifiesObserversForKey:">automaticallyNotifiesObservers(forKey:)</a>
+                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(cm)automaticallyNotifiesObserversForKey:">automaticallyNotifiesObservers(forKey:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -692,52 +778,11 @@
                 </li>
               </ul>
             </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Singleton%20access"></a>
-                <a name="//apple_ref/swift/Section/Singleton access" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Singleton%20access"></a>
-                  <h3 class="section-name"><p>Singleton access</p>
-</h3>
-                </div>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@RescueCore@objc(cs)RescueSession(cpy)sharedInstance"></a>
-                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@RescueCore@objc(cs)RescueSession(cpy)sharedInstance">sharedInstance</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Singleton access.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RescueSession</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-03-04)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-05-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

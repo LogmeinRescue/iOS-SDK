@@ -21,6 +21,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *apiKeyTextField;
 @property (weak, nonatomic) IBOutlet UILabel *appIDLabel;
 
+@property (weak, nonatomic) IBOutlet UITextField *parameterName;
+@property (weak, nonatomic) IBOutlet UITextField *parameter1;
+@property (weak, nonatomic) IBOutlet UITextField *parameter2;
+@property (weak, nonatomic) IBOutlet UITextField *parameter3;
+@property (weak, nonatomic) IBOutlet UITextField *parameter4;
+@property (weak, nonatomic) IBOutlet UITextField *parameter5;
+
 @end
 
 
@@ -39,6 +46,12 @@
     self.companyIdTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:kCompanyIdDefaultsKey];
     self.apiKeyTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:kApiKeyDefaultsKey];
     self.appIDLabel.text = [NSBundle mainBundle].bundleIdentifier;
+    self.parameterName.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameterNameDefaultsKey];
+    self.parameter1.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameter1DefaultsKey];
+    self.parameter2.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameter2DefaultsKey];
+    self.parameter3.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameter3DefaultsKey];
+    self.parameter4.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameter4DefaultsKey];
+    self.parameter5.text = [[NSUserDefaults standardUserDefaults] objectForKey:kParameter5DefaultsKey];
 }
 
 - (IBAction)switchChanged:(UISwitch *)sender
@@ -89,6 +102,30 @@
     else if (textField == self.apiKeyTextField)
     {
         [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kApiKeyDefaultsKey];
+    }
+    else if (textField == self.parameterName)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameterNameDefaultsKey];
+    }
+    else if (textField == self.parameter1)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameter1DefaultsKey];
+    }
+    else if (textField == self.parameter2)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameter2DefaultsKey];
+    }
+    else if (textField == self.parameter3)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameter3DefaultsKey];
+    }
+    else if (textField == self.parameter4)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameter4DefaultsKey];
+    }
+    else if (textField == self.parameter5)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:kParameter5DefaultsKey];
     }
 }
 

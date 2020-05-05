@@ -629,6 +629,21 @@ SWIFT_CLASS("_TtC10RescueCore17RescueSessionBase")
 - (void)endSession;
 /// Clean up the Rescue SDK, delete every data stored by it.
 - (void)reset;
+/// In certain iOS versions RPSystemBroadcastPickerView can be embedded to the app to start broadcast session easier.
+/// RPSystemBroadcastPickerView has known issues:
+/// <ul>
+///   <li>
+///     on iOS 12 before 12.2 the preferredExtensionfunction does not work properly
+///   </li>
+///   <li>
+///     on iOS 13 before 13.1 app crashes when user presses button
+///   </li>
+/// </ul>
+/// The function checks if the picker can be used on the iOS version running the app.
+///
+/// returns:
+/// <em>true</em> if RPSystemBroadcastPickerView is available and works, otherwise <em>false</em>.
++ (BOOL)shouldUseInAppBroadcastPicker SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

@@ -231,6 +231,7 @@ import WebKit
   @objc public func broadcastSession()
   @objc public func endSession()
   @objc public func reset()
+  @objc public class func shouldUseInAppBroadcastPicker() -> Swift.Bool
 }
 extension RescueSessionBase {
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)

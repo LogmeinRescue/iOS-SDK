@@ -18,6 +18,12 @@ static NSString* const kChannelIdDefaultsKey = @"RSSDKChannelIdDefaultsKey";
 static NSString* const kChannelNameDefaultsKey = @"RSSDKChannelNameDefaultsKey";
 static NSString* const kCompanyIdDefaultsKey = @"RSSDKCompanyIdDefaultsKey";
 static NSString* const kApiKeyDefaultsKey = @"RSSDKApiKeyDefaultsKey";
+static NSString* const kParameterNameDefaultsKey = @"RSSDKParameterNameDefaultsKey";
+static NSString* const kParameter1DefaultsKey = @"RSSDKParameter1DefaultsKey";
+static NSString* const kParameter2DefaultsKey = @"RSSDKParameter2DefaultsKey";
+static NSString* const kParameter3DefaultsKey = @"RSSDKParameter3DefaultsKey";
+static NSString* const kParameter4DefaultsKey = @"RSSDKParameter4DefaultsKey";
+static NSString* const kParameter5DefaultsKey = @"RSSDKParameter5DefaultsKey";
 
 
 @interface ViewController : UIViewController
