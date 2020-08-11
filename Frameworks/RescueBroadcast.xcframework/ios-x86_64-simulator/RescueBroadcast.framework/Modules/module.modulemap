@@ -1,9 +1,0 @@
-framework module RescueBroadcast {
-    umbrella header "RescueBroadcast.h"
-    export *
-}
-
-module RescueBroadcast.Swift {
-    header "RescueBroadcast-Swift.h"
-    requires objc
-}

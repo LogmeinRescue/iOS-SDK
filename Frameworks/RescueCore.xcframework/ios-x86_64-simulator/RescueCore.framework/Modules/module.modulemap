@@ -1,9 +1,0 @@
-framework module RescueCore {
-    umbrella header "RescueCore.h"
-    export *
-}
-
-module RescueCore.Swift {
-    header "RescueCore-Swift.h"
-    requires objc
-}
