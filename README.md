@@ -6,8 +6,6 @@ For further information please visit our website: http://secure.logmeinrescue.co
 
 ## Installation
 
-Our repository is using git-lfs for binary files in our frameworks. Please install git-lfs before and clone the repository or install via CocoaPods.
-
 ### By CocoaPods
 
 You can use Rescue SDK via [CocoaPods](http://cocoapods.org). Add each modules you'd like to use to your `Podfile`:
@@ -35,5 +33,9 @@ end
 
 Check out the [latest release](https://github.com/LogmeinRescue/iOS-SDK/releases/latest) and follow the [guide](http://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html) on our website.
 
-**Do not** download the zip file, the archive will not contain the LMICoreMedia.framework, use git clone (after you installed git-lfs). 
+
+1. Download the zip files (source code and frameworks). 
+2. Extract source code.
+3. Extract frameworks into the source code folder.
+
 **IMPORTANT UPDATE:** LMICoreMedia framework binary contains simulator architectures. Please add strip-frameworks script to your build steps (like in Camera Example app). 
