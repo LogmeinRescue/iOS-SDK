@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Custom', :file => 'LICENSE' }
   s.author       = "LogMeIn Inc."
   s.platform     = :ios, "11.0"
-  s.source       = { :http => "https://github.com/LogmeinRescue/iOS-SDK/releases/download/" + s.version.to_s + "/frameworks.zip" }
+  s.source       = { :http => "https://github.com/LogmeinRescue/iOS-SDK/releases/download/" + s.version.to_s + "/rescue-ios-sdk-" + s.version.to_s + "-frameworks.zip" }
   s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES" }
   s.documentation_url    = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
   s.default_subspec = "Core"
