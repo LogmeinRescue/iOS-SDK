@@ -8,13 +8,21 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/RescueBroadcastSession" class="dashAnchor"></a>
     <a title="RescueBroadcastSession Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RescueBroadcast 5.8 Docs</a> (90% documented)</p>
+        <p><a href="../index.html">RescueBroadcast 5.8 Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -52,23 +60,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Extensions.html">Extensions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html#/s:10Foundation4DataV15RescueBroadcastE18HexEncodingOptionsV">– HexEncodingOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification.html">Notification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification/Name.html">– Name</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -77,6 +68,7 @@
             <h1>RescueBroadcastSession</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RescueBroadcastSession</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
@@ -92,7 +84,7 @@
                     <code>
                     <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)initWithAppGroup:"></a>
                     <a name="//apple_ref/swift/Method/init(appGroup:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)initWithAppGroup:">init(appGroup:)</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)initWithAppGroup:">init(appGroup:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,7 +191,7 @@
                     <code>
                     <a name="/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)processVideoSampleBuffer:"></a>
                     <a name="//apple_ref/swift/Method/processVideoSampleBuffer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)processVideoSampleBuffer:">processVideoSampleBuffer(_:)</a>
+                    <a class="token" href="#/c:@M@RescueBroadcast@objc(cs)RescueBroadcastSession(im)processVideoSampleBuffer:">processVideoSampleBuffer(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -243,196 +235,13 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0aB7SessionC14stopDeviceViewyyF"></a>
-                    <a name="//apple_ref/swift/Method/stopDeviceView()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0aB7SessionC14stopDeviceViewyyF">stopDeviceView()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopDeviceView</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A15GatewayDelegateP18onHandleChatSocketyyAA0aH0CF"></a>
-                    <a name="//apple_ref/swift/Method/onHandleChatSocket(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A15GatewayDelegateP18onHandleChatSocketyyAA0aH0CF">onHandleChatSocket(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onHandleChatSocket</span><span class="p">(</span><span class="n">_</span> <span class="nv">socket</span><span class="p">:</span> <span class="kt">RescueSocket</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A15GatewayDelegateP27onHandleRemoteControlSocketyyAA0aI0CF"></a>
-                    <a name="//apple_ref/swift/Method/onHandleRemoteControlSocket(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A15GatewayDelegateP27onHandleRemoteControlSocketyyAA0aI0CF">onHandleRemoteControlSocket(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onHandleRemoteControlSocket</span><span class="p">(</span><span class="n">_</span> <span class="nv">socket</span><span class="p">:</span> <span class="kt">RescueSocket</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A15GatewayDelegateP02onC9ConnectedyyF"></a>
-                    <a name="//apple_ref/swift/Method/onGatewayConnected()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A15GatewayDelegateP02onC9ConnectedyyF">onGatewayConnected()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onGatewayConnected</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A15GatewayDelegateP02onC5ErroryyAA0acF0OF"></a>
-                    <a name="//apple_ref/swift/Method/onGatewayError(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A15GatewayDelegateP02onC5ErroryyAA0acF0OF">onGatewayError(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onGatewayError</span><span class="p">(</span><span class="n">_</span> <span class="nv">errorCode</span><span class="p">:</span> <span class="kt">RescueGatewayError</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A19ChatManagerDelegateP13onSocketErroryyF"></a>
-                    <a name="//apple_ref/swift/Method/onSocketError()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A19ChatManagerDelegateP13onSocketErroryyF">onSocketError()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onSocketError</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15RescueBroadcast0A32ChatMessagePacketHandlerDelegateP6onQuityyF"></a>
-                    <a name="//apple_ref/swift/Method/onQuit()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15RescueBroadcast0A32ChatMessagePacketHandlerDelegateP6onQuityyF">onQuit()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onQuit</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-08-31)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.logmeinrescue.com/" target="_blank" rel="external">LogMeIn</a>. All rights reserved. (Last updated: 2020-09-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

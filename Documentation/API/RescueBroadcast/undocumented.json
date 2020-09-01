@@ -1,54 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/Broadcast/RescueBroadcastSession.swift",
-      "line": 120,
-      "symbol": "RescueBroadcastSession.stopDeviceView()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/chat/RescueChatActionPacketHandler.swift",
-      "line": 224,
-      "symbol": "Notification.Name.shortcutChat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/chat/RescueChatActionPacketHandler.swift",
-      "line": 225,
-      "symbol": "Notification.Name.shortcutBrowser",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/chat/RescueChatActionPacketHandler.swift",
-      "line": 226,
-      "symbol": "Notification.Name.shortcutScreenshots",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/communication/CertificatePinner.swift",
-      "line": 60,
-      "symbol": "Data.HexEncodingOptions",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/communication/CertificatePinner.swift",
-      "line": 65,
-      "symbol": "Data.hexEncodedString(options:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/communication/RescueJSONLoader.swift",
-      "line": 96,
-      "symbol": "RescueJSONLoader.urlSession(_:didReceive:completionHandler:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/teamcity/build.tc/ffi-macbuilder09.noclab.local/work/8947f4f99ebc3d4b/SDK"
+  "source_directory": "/Users/tothdaniel/projects/ios_mono/SDK"
 }
