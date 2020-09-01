@@ -1,26 +1,26 @@
 {
   "warnings": [
     {
-      "file": "/Users/tkristofcsik/Develop/iOS/Rescue/SDK/RescueSDK/RescueCore/ios/RescueSessionBase.swift",
-      "line": 211,
+      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/RescueSession.swift",
+      "line": 209,
       "symbol": "RescueSession.broadcastDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/tkristofcsik/Develop/iOS/Rescue/SDK/RescueSDK/RescueCore/ios/communication/RescueSessionStartParameters.swift",
+      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/communication/RescueSessionStartParameters.swift",
       "line": 14,
       "symbol": "RescueSessionStartParameters.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/tkristofcsik/Develop/iOS/Rescue/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
+      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
       "line": 53,
       "symbol": "RescueChat.sharedInstance",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/tkristofcsik/Develop/iOS/Rescue/SDK"
+  "source_directory": "/Users/tothdaniel/projects/ios_mono/SDK"
 }
