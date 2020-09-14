@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/RescueSession.swift",
-      "line": 209,
+      "line": 211,
       "symbol": "RescueSession.broadcastDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
