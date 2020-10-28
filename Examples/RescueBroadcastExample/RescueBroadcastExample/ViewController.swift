@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
 
     @IBOutlet weak var broadcastPickerContainer: UIView!
+
+    private var sessionStatus: RescueSessionStatus = .idle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
         
         // Set self as delegate for the Rescue Session object
         RescueSession.sharedInstance.delegate = self
-        
+
         // Do not conect to the session automatically, we want to connect later from the extension
         RescueSession.sharedInstance.connectToSessionAutomatically = false
         
@@ -93,11 +95,8 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func connectButtonPressed()
-    {
-        if RescueSession.sharedInstance.sessionStatus == .disconnected ||
-            RescueSession.sharedInstance.sessionStatus == .idle
-        {
+    @IBAction private func connectButtonPressed() {
+        if sessionStatus == .disconnected || sessionStatus == .idle {
             // create an alert controller
             let alertController = UIAlertController(title: "Connect", message: nil, preferredStyle: .alert)
             
@@ -118,14 +117,13 @@ class ViewController: UIViewController {
             // present the alert
             present(alertController, animated: true) {}
         } else {
-            RescueSession.sharedInstance.endSession()
+            RescueSession.sharedInstance.endBroadcastSession()
         }
     }
     
     // MARK: Start session
     
     func privateSession() {
-        
         let alertController = UIAlertController(title: "Private session", message: nil, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Connect", style: .default, handler: { _ in
@@ -247,12 +245,43 @@ class ViewController: UIViewController {
 
 extension ViewController: RescueSessionDelegate {
     
-    func rescueSessionStatusDidChange(_ status: RescueSessionStatus) {
-        print("status \(status.rawValue)")
+    func rescueSessionStatusDidChange(_ status: RescueSessionStatus) {}
+    
+    func rescueSessionError(_ error: RescueError, withUserInfo userInfo: [String : AnyObject]?) {
+        print("error \(error.rawValue) \(String(describing: userInfo))")
+    }
+    
+    // Get notification from the SDK about the session
+    func rescueSessionReady() {
+        statusLabel.text = "Session Ready"
+        connectButton.setTitle("Disconnect", for: UIControl.State())
+        // Tell the SDK that the app will not connect to the session, we want to connect later from the extension
+        RescueSession.sharedInstance.broadcastSession()
+
+        RescueSession.sharedInstance.broadcastDelegate = self
+
+        // Show the system screen share button
+        broadcastPickerContainer.isHidden = false
+    }
+}
+
+extension ViewController: RescueBroadcastDelegate {
+
+    func rescueBroadcastDidStart() {
+        print("Rescue broadcast did start")
+    }
+
+    func rescueBroadcastDidStop() {
+        print("Rescue broadcast did stop")
 
         // Hide the system screen share button
         broadcastPickerContainer.isHidden = true
+    }
 
+    func rescueBroadcastSessionStatusDidChange(_ status: RescueSessionStatus) {
+        print("broadcast session status: \(status.rawValue)")
+
+        sessionStatus = status
         // set the title for the status label based of the session status
         switch status {
         case .connected:
@@ -284,21 +313,4 @@ extension ViewController: RescueSessionDelegate {
             connectButton.setTitle("Connect", for: UIControl.State())
         }
     }
-    
-    func rescueSessionError(_ error: RescueError, withUserInfo userInfo: [String : AnyObject]?) {
-        print("error \(error.rawValue) \(String(describing: userInfo))")
-    }
-    
-    // Get notification from the SDK about the session
-    func rescueSessionReady() {
-        statusLabel.text = "Session Ready"
-        connectButton.setTitle("Disconnect", for: UIControl.State())
-        // Tell the SDK that the app will not conect to the session, we want to connect later from the extension
-        RescueSession.sharedInstance.broadcastSession()
-        // Show the system screen share button
-        broadcastPickerContainer.isHidden = false
-    }
-
-
 }
-
