@@ -1,26 +1,26 @@
 {
   "warnings": [
     {
-      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/RescueSession.swift",
+      "file": "/Users/teamcity/build.tc/ffi-macbuilder20.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/RescueSession.swift",
       "line": 211,
       "symbol": "RescueSession.broadcastDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/communication/RescueSessionStartParameters.swift",
+      "file": "/Users/teamcity/build.tc/ffi-macbuilder20.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/communication/RescueSessionStartParameters.swift",
       "line": 14,
       "symbol": "RescueSessionStartParameters.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/tothdaniel/projects/ios_mono/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
+      "file": "/Users/teamcity/build.tc/ffi-macbuilder20.noclab.local/work/8947f4f99ebc3d4b/SDK/RescueSDK/RescueCore/ios/interface/RescueChat.swift",
       "line": 53,
       "symbol": "RescueChat.sharedInstance",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/tothdaniel/projects/ios_mono/SDK"
+  "source_directory": "/Users/teamcity/build.tc/ffi-macbuilder20.noclab.local/work/8947f4f99ebc3d4b/SDK"
 }
