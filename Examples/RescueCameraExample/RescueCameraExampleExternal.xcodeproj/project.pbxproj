@@ -307,7 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 5.12;
+				CURRENT_PROJECT_VERSION = 5.13;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
@@ -316,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.12;
+				MARKETING_VERSION = 5.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -326,7 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 5.12;
+				CURRENT_PROJECT_VERSION = 5.13;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/../../Frameworks";
 				INFOPLIST_FILE = RescueCameraExample/Info.plist;
@@ -335,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.12;
+				MARKETING_VERSION = 5.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RescueCameraExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
