@@ -29,6 +29,13 @@ end
 
 **IMPORTANT UPDATE:** Our pod is devlivering XCFrameworks supported from CocoaPods 1.9. Please use latest cocoapod to install or update this Pod.
 
+### By Swift Package Manager
+
+You can use Rescue SDK via [Swift Package Manager](https://www.swift.org/package-manager/).
+```console
+https://github.com/LogmeinRescue/iOS-SDK
+```
+
 ### Manually
 
 Check out the [latest release](https://github.com/LogmeinRescue/iOS-SDK/releases/latest) and follow the [guide](http://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html) on our website.
