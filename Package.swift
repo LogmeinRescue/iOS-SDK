@@ -9,19 +9,19 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "RescueSDK",
-            targets: ["RescueSDK"]
+            name: "RescueCore",
+            targets: ["RescueCoreWrapper"]
         ),
+        .library(
+            name: "RescueBroadcast",
+            targets: ["RescueCoreWrapper"]
+        ),
+        .library(
+            name: "LMICoreMedia",
+            targets: ["LMICoreMediaWrapper"]
+        )
     ],
     targets: [
-        .target(
-            name: "RescueSDK",
-            dependencies: [
-                .target(name: "RescueCoreWrapper"),
-                .target(name: "RescueBroadcastWrapper"),
-                .target(name: "LMICoreMediaWrapper"),
-            ]
-        ),
         .target(
             name: "RescueCoreWrapper",
             dependencies: [
@@ -31,7 +31,7 @@ let package = Package(
         .target(
             name: "RescueBroadcastWrapper",
             dependencies: [
-                .target(name: "RescueBroadcast"),
+                .target(name: "RescueBroadcast")
             ]
         ),
         .target(
