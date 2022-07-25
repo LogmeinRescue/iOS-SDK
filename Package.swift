@@ -14,7 +14,7 @@ let package = Package(
         ),
         .library(
             name: "RescueBroadcast",
-            targets: ["RescueCoreWrapper"]
+            targets: ["RescueBroadcastWrapper"]
         ),
         .library(
             name: "LMICoreMedia",
