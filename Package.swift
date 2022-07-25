@@ -9,38 +9,19 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "RescueSDK",
-            targets: ["RescueSDK"]
+            name: "RescueCore",
+            targets: ["RescueCore"]
         ),
+        .library(
+            name: "RescueBroadcast",
+            targets: ["RescueBroadcast"]
+        ),
+        .library(
+            name: "LMICoreMedia",
+            targets: ["LMICoreMedia"]
+        )
     ],
     targets: [
-        .target(
-            name: "RescueSDK",
-            dependencies: [
-                .target(name: "RescueCoreWrapper"),
-                .target(name: "RescueBroadcastWrapper"),
-                .target(name: "LMICoreMediaWrapper"),
-            ]
-        ),
-        .target(
-            name: "RescueCoreWrapper",
-            dependencies: [
-                .target(name: "RescueCore")
-            ]
-        ),
-        .target(
-            name: "RescueBroadcastWrapper",
-            dependencies: [
-                .target(name: "RescueBroadcast"),
-            ]
-        ),
-        .target(
-            name: "LMICoreMediaWrapper",
-            dependencies: [
-                .target(name: "LMICoreMedia"),
-                .target(name: "RescueCore")
-            ]
-        ),
         .binaryTarget(
             name: "RescueCore",
             url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.14/RescueCore.xcframework.zip",
