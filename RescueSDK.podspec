@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = "LogMeIn Inc."
   s.platform     = :ios, "12.0"
   s.source       = { :http => "https://github.com/LogmeinRescue/iOS-SDK/releases/download/" + s.version.to_s + "/rescue-ios-sdk-" + s.version.to_s + "-frameworks.zip",
-                     :sha256 => "97777c65261313761fa6453e7294bf732825470a781417c1691d97f36d3acefd" }
+                     :sha256 => "5f22b795174dca45d4dce77338667827b6bcf9767e9700be00dcd930fb9a9f51" }
   s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES", "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.documentation_url    = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
