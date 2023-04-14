@@ -24,17 +24,17 @@ let package = Package(
         .binaryTarget(
             name: "RescueCore",
             url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/RescueCore.xcframework.zip",
-            checksum: "106cbf96996ea8a1b5fa00ac5c622dc316ad96f63bf1a4702a97c3d4879a1040"
+            checksum: "c1cb92caf12bc9d4456245e5b304b56483e86e7a1a0aa2d9a90176be825d39e3"
         ),
         .binaryTarget(
             name: "RescueBroadcast",
             url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/RescueBroadcast.xcframework.zip",
-            checksum: "dba2d7e0add7a5e29d277eb41cefe7748c5ce90011e5480594e1cf43a1a13645"
+            checksum: "03572ec5d434e4cc472e119fef5409a937436a8675e9bf775d91616e34028e3f"
         ),
         .binaryTarget(
             name: "LMICoreMedia",
             url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/LMICoreMedia.xcframework.zip",
-            checksum: "2c6c81fde6232a5c1a0f91270d9f7c8c9004b3bf3df6eab58d0d479d82740f7f"
+            checksum: "42d94e914885b10a3e2f477554e74385e9918a1eb8fb8736ca11925526a0652a"
         )
     ]
 )
