@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RescueSDK"
-  s.version      = "5.15"
+  s.version      = "5.16"
   s.summary      = "LogMeIn Rescue SDK for iOS."
   s.description  = <<-DESC
   The Rescue In-App Support iOS SDK allows your customers to establish a Rescue support session within your app.  
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = "LogMeIn Inc."
   s.platform     = :ios, "12.0"
   s.source       = { :http => "https://github.com/LogmeinRescue/iOS-SDK/releases/download/" + s.version.to_s + "/rescue-ios-sdk-" + s.version.to_s + "-frameworks.zip",
-                     :sha256 => "66b32d618d338e0a34e6dfbae6e08495e03d248b6660f3be8868c6d1ec8ed4a3" }
+                     :sha256 => "61f212c7defb60431cbf5698d79a4680e8c524f646a63602fca821596f8ac9db" }
   s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES", "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
   s.documentation_url    = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
