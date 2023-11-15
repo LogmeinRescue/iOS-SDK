@@ -56,20 +56,12 @@ class ViewController: UIViewController {
     fileprivate func addBroadcastPicker() {
         // Check if broadcast picker works in the current iOS version
         let frame = CGRect(x: 0, y: 0, width: broadcastPickerContainer.bounds.width, height: broadcastPickerContainer.bounds.height)
-        if RescueSession.shouldUseInAppBroadcastPicker() {
-            let picker = RPSystemBroadcastPickerView(frame: frame)
-            if #available(iOS 13.0, *) {
-                picker.backgroundColor = .systemFill
-            }
-            broadcastPickerContainer.addSubview(picker)
-            // You can set the bundle ID of your extension to only display that option in the list.
-            //picker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
-            picker.showsMicrophoneButton = false
-        } else {
-            let textView = UITextView(frame: frame)
-            textView.text = "Open your Control Center.\n\n3D touch Screen Recording and pick the example app in the list."
-            broadcastPickerContainer.addSubview(textView)
-        }
+        let picker = RPSystemBroadcastPickerView(frame: frame)
+        picker.backgroundColor = .systemFill
+        broadcastPickerContainer.addSubview(picker)
+        // You can set the bundle ID of your extension to only display that option in the list.
+        //picker.preferredExtension = "com.logmein.rescue.example.broadcast.RescueBroadcastExampleExtension"
+        picker.showsMicrophoneButton = false
     }
 
     /// Set default values for session start parameters.
