@@ -23,18 +23,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RescueCore",
-            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/RescueCore.xcframework.zip",
-            checksum: "c1cb92caf12bc9d4456245e5b304b56483e86e7a1a0aa2d9a90176be825d39e3"
+            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.16/RescueCore.xcframework.zip",
+            checksum: "c8b7bfe59363b462e16523e078cb615c93cb407419abce674cbcd46a43ca72c5"
         ),
         .binaryTarget(
             name: "RescueBroadcast",
-            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/RescueBroadcast.xcframework.zip",
-            checksum: "03572ec5d434e4cc472e119fef5409a937436a8675e9bf775d91616e34028e3f"
+            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.16/RescueBroadcast.xcframework.zip",
+            checksum: "b3ac1d27a1137130549db1c954112086322437b98361698ce6d5c14f37d245cc"
         ),
         .binaryTarget(
             name: "LMICoreMedia",
-            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.15/LMICoreMedia.xcframework.zip",
-            checksum: "42d94e914885b10a3e2f477554e74385e9918a1eb8fb8736ca11925526a0652a"
+            url: "https://github.com/LogmeinRescue/iOS-SDK/releases/download/5.16/LMICoreMedia.xcframework.zip",
+            checksum: "93fa49c3a2192616da840e562222cc47b9e26bf0816e970e85c3ac48ae3c6bed"
         )
     ]
 )
