@@ -11,8 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "15.0"
   s.source       = { :http => "https://github.com/LogmeinRescue/iOS-SDK/releases/download/" + s.version.to_s + "/rescue-ios-sdk-" + s.version.to_s + "-frameworks.zip",
                      :sha256 => "e019711b5ff2d99f54c9428de428d99f0e4dc00eabcc0fc791b5418072fdce1e" }
-  s.pod_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
-  s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES", "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
+  s.user_target_xcconfig = { "EMBEDDED_CONTENT_CONTAINS_SWIFT" => "YES", "CLANG_MODULES_AUTOLINK" => "YES" }
   s.documentation_url    = "https://secure.logmeinrescue.com/welcome/webhelp/EN/SDKi/MobileSDK/c_riossdk_overview.html"
   s.default_subspec = "Core"
 
